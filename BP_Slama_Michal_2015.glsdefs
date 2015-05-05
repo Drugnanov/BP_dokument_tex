@@ -1,0 +1,540 @@
+\ifglsentryexists{CVUT}{}%
+{%
+\gls@defglossaryentry{CVUT}%
+{%
+name={{\v C}VUT},%
+sort={{\v C}VUT},%
+type={acronym},%
+first={{\v C}esk{\' e} vysok{\' e} u{\v c}en{\' i} technick{\' e} v Praze\glsspace ({\v C}VUT)},%
+firstplural={{\v C}esk{\' e} vysok{\' e} u{\v c}en{\' i} technick{\' e} v Prazes\glsspace ({\v C}VUTs)},%
+text={{\v C}VUT},%
+plural={{\v C}VUTs},%
+description={{\v C}esk{\' e} vysok{\' e} u{\v c}en{\' i} technick{\' e} v Praze},%
+descriptionplural={{\v C}esk{\' e} vysok{\' e} u{\v c}en{\' i} technick{\' e} v Praze\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={{\v C}esk{\' e} vysok{\' e} u{\v c}en{\' i} technick{\' e} v Praze},%
+longplural={{\v C}esk{\' e} vysok{\' e} u{\v c}en{\' i} technick{\' e} v Prazes},%
+short={{\v C}VUT},%
+shortplural={{\v C}VUTs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{FIT}{}%
+{%
+\gls@defglossaryentry{FIT}%
+{%
+name={FIT},%
+sort={FIT},%
+type={acronym},%
+first={Fakulta informa{\v c}n{\' i}ch technologi{\' i}\glsspace (FIT)},%
+firstplural={Fakulta informa{\v c}n{\' i}ch technologi{\' i}s\glsspace (FITs)},%
+text={FIT},%
+plural={FITs},%
+description={Fakulta informa{\v c}n{\' i}ch technologi{\' i}},%
+descriptionplural={Fakulta informa{\v c}n{\' i}ch technologi{\' i}\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Fakulta informa{\v c}n{\' i}ch technologi{\' i}},%
+longplural={Fakulta informa{\v c}n{\' i}ch technologi{\' i}s},%
+short={FIT},%
+shortplural={FITs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{ws}{}%
+{%
+\gls@defglossaryentry{ws}%
+{%
+name={WS},%
+sort={WS},%
+type={acronym},%
+first={Web service\glsspace (WS)},%
+firstplural={Web services\glsspace (WSs)},%
+text={WS},%
+plural={WSs},%
+description={Web service},%
+descriptionplural={Web service\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Web service},%
+longplural={Web services},%
+short={WS},%
+shortplural={WSs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{api}{}%
+{%
+\gls@defglossaryentry{api}%
+{%
+name={API},%
+sort={API},%
+type={acronym},%
+first={Application Programming Interface\glsspace (API)},%
+firstplural={Application Programming Interfaces\glsspace (APIs)},%
+text={API},%
+plural={APIs},%
+description={Application Programming Interface},%
+descriptionplural={Application Programming Interface\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Application Programming Interface},%
+longplural={Application Programming Interfaces},%
+short={API},%
+shortplural={APIs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{os}{}%
+{%
+\gls@defglossaryentry{os}%
+{%
+name={OS},%
+sort={OS},%
+type={acronym},%
+first={Operating system\glsspace (OS)},%
+firstplural={Operating systems\glsspace (OSs)},%
+text={OS},%
+plural={OSs},%
+description={Operating system},%
+descriptionplural={Operating system\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Operating system},%
+longplural={Operating systems},%
+short={OS},%
+shortplural={OSs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{rest}{}%
+{%
+\gls@defglossaryentry{rest}%
+{%
+name={REST},%
+sort={REST},%
+type={acronym},%
+first={Representational State Transfer\glsspace (REST)},%
+firstplural={Representational State Transfers\glsspace (RESTs)},%
+text={REST},%
+plural={RESTs},%
+description={Representational State Transfer},%
+descriptionplural={Representational State Transfer\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Representational State Transfer},%
+longplural={Representational State Transfers},%
+short={REST},%
+shortplural={RESTs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{soap}{}%
+{%
+\gls@defglossaryentry{soap}%
+{%
+name={SOAP},%
+sort={SOAP},%
+type={acronym},%
+first={Simple Object Access protocol\glsspace (SOAP)},%
+firstplural={Simple Object Access protocols\glsspace (SOAPs)},%
+text={SOAP},%
+plural={SOAPs},%
+description={Simple Object Access protocol},%
+descriptionplural={Simple Object Access protocol\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Simple Object Access protocol},%
+longplural={Simple Object Access protocols},%
+short={SOAP},%
+shortplural={SOAPs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{http}{}%
+{%
+\gls@defglossaryentry{http}%
+{%
+name={HTTP},%
+sort={HTTP},%
+type={acronym},%
+first={Hypertext Transfer Protocol\glsspace (HTTP)},%
+firstplural={Hypertext Transfer Protocols\glsspace (HTTPs)},%
+text={HTTP},%
+plural={HTTPs},%
+description={Hypertext Transfer Protocol},%
+descriptionplural={Hypertext Transfer Protocol\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Hypertext Transfer Protocol},%
+longplural={Hypertext Transfer Protocols},%
+short={HTTP},%
+shortplural={HTTPs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{wsdl}{}%
+{%
+\gls@defglossaryentry{wsdl}%
+{%
+name={WSDL},%
+sort={WSDL},%
+type={acronym},%
+first={Web Services Description Language\glsspace (WSDL)},%
+firstplural={Web Services Description Languages\glsspace (WSDLs)},%
+text={WSDL},%
+plural={WSDLs},%
+description={Web Services Description Language},%
+descriptionplural={Web Services Description Language\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Web Services Description Language},%
+longplural={Web Services Description Languages},%
+short={WSDL},%
+shortplural={WSDLs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{crud}{}%
+{%
+\gls@defglossaryentry{crud}%
+{%
+name={CRUD},%
+sort={CRUD},%
+type={acronym},%
+first={create-read-update-delete operations\glsspace (CRUD)},%
+firstplural={create-read-update-delete operationss\glsspace (CRUDs)},%
+text={CRUD},%
+plural={CRUDs},%
+description={create-read-update-delete operations},%
+descriptionplural={create-read-update-delete operations\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={create-read-update-delete operations},%
+longplural={create-read-update-delete operationss},%
+short={CRUD},%
+shortplural={CRUDs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{uri}{}%
+{%
+\gls@defglossaryentry{uri}%
+{%
+name={URI},%
+sort={URI},%
+type={acronym},%
+first={Uniform Resource Identifier\glsspace (URI)},%
+firstplural={Uniform Resource Identifiers\glsspace (URIs)},%
+text={URI},%
+plural={URIs},%
+description={Uniform Resource Identifier},%
+descriptionplural={Uniform Resource Identifier\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Uniform Resource Identifier},%
+longplural={Uniform Resource Identifiers},%
+short={URI},%
+shortplural={URIs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{wadl}{}%
+{%
+\gls@defglossaryentry{wadl}%
+{%
+name={WADL},%
+sort={WADL},%
+type={acronym},%
+first={Uniform Resource Identifier\glsspace (WADL)},%
+firstplural={Uniform Resource Identifiers\glsspace (WADLs)},%
+text={WADL},%
+plural={WADLs},%
+description={Uniform Resource Identifier},%
+descriptionplural={Uniform Resource Identifier\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Uniform Resource Identifier},%
+longplural={Uniform Resource Identifiers},%
+short={WADL},%
+shortplural={WADLs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{raml}{}%
+{%
+\gls@defglossaryentry{raml}%
+{%
+name={RAML},%
+sort={RAML},%
+type={acronym},%
+first={RESTful API Modeling\glsspace (RAML)},%
+firstplural={RESTful API Modelings\glsspace (RAMLs)},%
+text={RAML},%
+plural={RAMLs},%
+description={RESTful API Modeling},%
+descriptionplural={RESTful API Modeling\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={RESTful API Modeling},%
+longplural={RESTful API Modelings},%
+short={RAML},%
+shortplural={RAMLs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{yaml}{}%
+{%
+\gls@defglossaryentry{yaml}%
+{%
+name={YAML},%
+sort={YAML},%
+type={acronym},%
+first={Ain\IeC {\textquoteright }t Markup Language\glsspace (YAML)},%
+firstplural={Ain\IeC {\textquoteright }t Markup Languages\glsspace (YAMLs)},%
+text={YAML},%
+plural={YAMLs},%
+description={Ain’t Markup Language},%
+descriptionplural={Ain’t Markup Language\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Ain\IeC {\textquoteright }t Markup Language},%
+longplural={Ain\IeC {\textquoteright }t Markup Languages},%
+short={YAML},%
+shortplural={YAMLs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{xml}{}%
+{%
+\gls@defglossaryentry{xml}%
+{%
+name={XML},%
+sort={XML},%
+type={acronym},%
+first={Extensible Markup Language\glsspace (XML)},%
+firstplural={Extensible Markup Languages\glsspace (XMLs)},%
+text={XML},%
+plural={XMLs},%
+description={Extensible Markup Language},%
+descriptionplural={Extensible Markup Language\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Extensible Markup Language},%
+longplural={Extensible Markup Languages},%
+short={XML},%
+shortplural={XMLs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{json}{}%
+{%
+\gls@defglossaryentry{json}%
+{%
+name={JSON},%
+sort={JSON},%
+type={acronym},%
+first={JavaScript Object Notation\glsspace (JSON)},%
+firstplural={JavaScript Object Notations\glsspace (JSONs)},%
+text={JSON},%
+plural={JSONs},%
+description={JavaScript Object Notation},%
+descriptionplural={JavaScript Object Notation\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={JavaScript Object Notation},%
+longplural={JavaScript Object Notations},%
+short={JSON},%
+shortplural={JSONs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{orm}{}%
+{%
+\gls@defglossaryentry{orm}%
+{%
+name={ORM},%
+sort={ORM},%
+type={acronym},%
+first={Object-relational mapping\glsspace (ORM)},%
+firstplural={Object-relational mappings\glsspace (ORMs)},%
+text={ORM},%
+plural={ORMs},%
+description={Object-relational mapping},%
+descriptionplural={Object-relational mapping\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Object-relational mapping},%
+longplural={Object-relational mappings},%
+short={ORM},%
+shortplural={ORMs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{sdk}{}%
+{%
+\gls@defglossaryentry{sdk}%
+{%
+name={SDK},%
+sort={SDK},%
+type={acronym},%
+first={Software development kit\glsspace (SDK)},%
+firstplural={Software development kits\glsspace (SDKs)},%
+text={SDK},%
+plural={SDKs},%
+description={Software development kit},%
+descriptionplural={Software development kit\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Software development kit},%
+longplural={Software development kits},%
+short={SDK},%
+shortplural={SDKs},%
+counter={page},%
+parent={},%
+%
+}%
+}%

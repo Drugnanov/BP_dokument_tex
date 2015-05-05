@@ -1,0 +1,60 @@
+\begin{thebibliography}{10}
+\providecommand{\biburl}[1]{\url{#1}}
+\providecommand{\urlprefix}{Dostupn{\' e} z: }
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+\providecommand{\selectlanguage}[1]{\relax}
+\providecommand{\eprint}[2][]{\biburl{#2}}
+
+\bibitem{gtd}
+Allen, D.: \emph{M{\' i}t vše hotovo - Jak zvládnout práci i život a cítit
+  se při tom dobře}. Brno: Jan Melvil Publishing, s.r.o., 2008, ISBN
+  978-80-903912-8-4.
+
+\bibitem{gtd_graph}
+Gregor, L.: Stru{\v c}n{\' y} pr{\v u}vodce po metod{\v e} GTD. [online], 2008,
+  [cit. 2015-04-29].
+\urlprefix\biburl{http://www.mitvsehotovo.cz/2008/08/strucny-pruvodce-po-metode-gtd/}
+
+\bibitem{toodledo_overview}
+toodledo: weird name, solid app. [online], 2012, [cit. 2015-04-29].
+\urlprefix\biburl{http://purplezengoat.com/2012/04/06/toodledo-weird-name-solid-app/}
+
+\bibitem{wunderlist_overview}
+Saunders, G. J.~M.: Wunderlist — UI peculiarities. [online], 2013, [cit.
+  2015-04-29].
+\urlprefix\biburl{http://blog.garethjmsaunders.co.uk/tag/wunderlist/}
+
+\bibitem{gtd_thin_client}
+Thin client. [online], 2015, [cit. 2015-04-29].
+\urlprefix\biburl{http://en.wikipedia.org/wiki/Thin_client}
+
+\bibitem{wildfly}
+What is WildFly? [online], 2015, [cit. 2015-04-29].
+\urlprefix\biburl{http://wildfly.org/about}
+
+\bibitem{android_what_choose}
+Hamlyn, M.: Should You Develop for Android, iOS or both? [online], 2014, [cit.
+  2015-04-29].
+\urlprefix\biburl{http://www.appmakr.com/blog/develop-android-ios/}
+
+\bibitem{android_market}
+Comparison of mobile operating systems. [online], 2015, [cit. 2015-04-29].
+\urlprefix\biburl{http://en.wikipedia.org/wiki/Comparison_of_mobile_operating_systems}
+
+\bibitem{android_market_us}
+McCracken, H.: Who’s Winning, iOS or Android? All the Numbers, All in One
+  Place. [online], 2013, [cit. 2015-04-29].
+\urlprefix\biburl{http://techland.time.com/2013/04/16/ios-vs-android/}
+
+\bibitem{android_sdk_recommendation}
+Supporting Different Platform Versions. [online], 2015, [cit. 2015-04-29].
+\urlprefix\biburl{http://developer.android.com/training/basics/supporting-devices/platforms.html}
+
+\bibitem{android_sdk_graph}
+Dashboards. [online], 2015, [cit. 2015-04-29].
+\urlprefix\biburl{http://developer.android.com/about/dashboards/index.html}
+
+\end{thebibliography}
