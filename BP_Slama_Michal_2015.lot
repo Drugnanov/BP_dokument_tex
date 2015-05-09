@@ -4,6 +4,11 @@
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}
+\contentsline {table}{\numberline {3.1}{\ignorespaces Rozd\IeC {\'\i }ly mezi SOAP a REST\relax }}{19}{table.caption.14}
+\addvspace {10pt}
+\contentsline {table}{\numberline {4.1}{\ignorespaces Funkce HTTP method\relax }}{25}{table.caption.19}
+\contentsline {table}{\numberline {4.2}{\ignorespaces Rozhran\IeC {\'\i } REST API p\IeC {\v r}\IeC {\'\i }stupn\IeC {\'e} s tokenem\relax }}{26}{table.caption.20}
+\contentsline {table}{\numberline {4.3}{\ignorespaces Rozhran\IeC {\'\i } REST API p\IeC {\v r}\IeC {\'\i }stupn\IeC {\'e} bez tokenu\relax }}{26}{table.caption.21}
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}

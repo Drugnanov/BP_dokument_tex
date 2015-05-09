@@ -27,6 +27,13 @@
 \usepackage{enumitem}
 \usepackage{hyperref}
 \usepackage{tabularx}
+\usepackage{spverbatim}
+\usepackage{listings}
+\usepackage{caption}
+
+\DeclareCaptionFont{white}{\color{white}}
+\DeclareCaptionFormat{listing}{\colorbox{gray}{\parbox{\textwidth}{#1#2#3}}}
+\captionsetup[lstlisting]{format=listing,labelfont=white,textfont=white}
 
 \newcommand{\tg}{\mathop{\mathrm{tg}}} %cesky tangens
 \newcommand{\cotg}{\mathop{\mathrm{cotg}}} %cesky cotangens
@@ -52,7 +59,32 @@
 \keywordsCS{webová aplikace, mobilní aplikace, osobní plánování, spring, android, REST API, Facebook, Google kalendář}
 \keywordsEN{web application, mobile appliaction, personal planning, spring, android, REST API, Facebook, Google Calendar}
 
+\lstset{
+	basicstyle=\footnotesize\ttfamily,
+	numberstyle=\tiny,
+	numbersep=5pt,
+	tabsize=2,
+	extendedchars=true,
+	breaklines=true,
+	keywordstyle=\color{red},
+	frame=b,         
+	stringstyle=\color{white}\ttfamily,
+	showspaces=false, 
+	showtabs=false,  
+	xleftmargin=17pt,
+	framexleftmargin=17pt,
+	framexrightmargin=5pt,
+	framexbottommargin=4pt,
+	showstringspaces=false, 
+	breakatwhitespace=true,
+	commentstyle=\color{pgreen},
+	keywordstyle=\color{pblue},
+	stringstyle=\color{pred}    
+}
+\lstloadlanguages{Java}
+
 \begin{document}
+ 
 
 \newacronym{CVUT}{{\v C}VUT}{{\v C}esk{\' e} vysok{\' e} u{\v c}en{\' i} technick{\' e} v Praze}
 \newacronym{FIT}{FIT}{Fakulta informa{\v c}n{\' i}ch technologi{\' i}}
@@ -73,6 +105,11 @@
 \newacronym{orm}{ORM}{Object-relational mapping}
 \newacronym{sdk}{SDK}{Software development kit}
 
+\todototoc
+\listoftodos
+
+
+\todo{Co je obsaženo v práci, nikoliv na čem budu dělat}
 
 \begin{introduction}
 \begin{center}
@@ -254,8 +291,6 @@ Nevýhody:
 Mírně nepřehledná webová aplikace.
 Podpora Google Calendar až do placené verze.
 
-Tento systém v současnosti používám pro své osobní plánování.
-
 \begin{figure}[h]
 	\makebox[\textwidth][c]{\includegraphics[height=0.7\textwidth]{pictures/doit_overview}}
 	\caption{Mobilní aplikace Doit.\cite{doit_overviewgram}}\label{fig:doit_overviewgram}
@@ -316,8 +351,8 @@ Současné implementace můj závěr potvrzují. I u malých projektů je podpor
 
 \chapter{Návrh}
 
-Tato kapitola popisuje volbu technologií pro implementovanou aplikaci poskytující centrální uložení dat skrze \acrshort{ws} a aplikaci na \acrshort{os} Android. Nároky na technologie vycházejí ze závěrů analýzy předešlé kapitoly a dále je rozvíjejí.
-Současně hledám vhodný server pro hostování \acrshort{ws} aplikace.
+Tato kapitola popisuje volbu technologií pro implementovanou aplikaci poskytující centrální uložení dat skrze \acrshort{ws} a aplikaci pro \acrshort{os} Android. Nároky na technologie vycházejí ze závěrů analýzy předešlé kapitoly a dále je rozvíjejí.
+Protože jedna z aplikací potřebuje hosting, budeme hledat vhodný server splňující naše potřeby.
 
 \section{Rozdělení aplikace}
 
@@ -338,52 +373,53 @@ První implementace GUI cílená na mobilní zařízení se systémem Android. F
 	\caption{Model nasazení GTD (šedivě zbarvená nasazení ukazují úvahy dalšího rozšíření)})\label{fig:gtd_deployment_model}s
 \end{figure}
 
+\todo{Komentář, že se jedná o navazující projekt z SP2}
 Vycházení z návrhu rozdělení aplikace. GUI aplikace jsou unikátní pro každou platformu s centrální aplikací pro správu data komunikují přes HTTP protokol.
 
 \section{Technologie}
 
 \subsection{Aplikace pro centrální uložení dat}
   
-\subsubsection{\acrshort{rest} \acrshort{api}}
+\subsubsection{Webová služba -- \acrshort{rest} \acrshort{api}}
 
 Při volbě webového \acrshort{api} jsem se rozhodoval mezi dvěma typy webových služeb.
 \newline
-
-\textit{\acrshort{rest} \acrshort{api}}
-
-Bezstavová komunikace přes protokol \acrshort{http} využívající typicky metody GET/ PUT/ POST a  DELETE. Ty umožňují \acrshort{crud} operace nad zdrojem jednoznačně identifikovaným pomocí \acrshort{uri}. V našem případě je zdrojem např. úkol.
-
-Výhodnou \acrshort{rest}u je jeho škálovatelnost a pro klienta snadná implementace konzumující RESTové služby. Přenosovým formátem nemusí být jenom XML, ale také JSON a další. 
-
-Nevýhodou je nejednotná specifikace služby. Existuje \acrshort{wadl} a \acrshort{raml}, ale v současnosti nemůžeme žádnou z nich považovat za hlavní. 
-
-\textit{\acrshort{soap}}
-
-Bezestavová komunikace přes protokol \acrshort{http} založená na XML formátu.
-
-\textit{Důležité charakteristiky:}
-\begin{itemize}[nosep]
-	\item \textit{platformová nezávislost} -- klient a server mohou být zcela rozdílné systémy
-	\item \textit{nezávislost na jazyku} -- přenosovým formátem \acrshort{soap} je jednoduché \acrshort{xml}, které není složité generovat
-	\item \textit{pro komunikaci používá HTTP protokol} -- může využít i jiné protokoly, ale \acrshort{http} je nejběžnější
-	\item \textit{zabezpečení} -- podporuje zabezpečení pomocí hlavičky soap požadavku. Využití je například podepsání požadavku certifikátem klienta.  
-	\item \textit{specifikace pomocí \acrshort{wsdl}} -- popisuje dostupné služby, jejich zabezpečení a podobu požadavků a odpovědí
-\end{itemize}
-
-\textit{Nevýhody:}
-\begin{itemize}[nosep]
-	\item \textit{závislost na \acrshort{xml}} -- jeho zpracování stojí výpočetní čas
+\begin{itemize}
+	\item \textit{SOAP}
+	\item \textit{REST}
 \end{itemize}
 \vspace*{1\baselineskip}
-\textit{Má volba:}
 
-Rozhodl jsem se pro \acrshort{rest}. Funkce centrálního uložení dat přesně odpovídají specifikaci RESTového API. Navíc klientů v tomto případě bude více a jednoduchá implementace pro konzumaci RESTového API mi pomůže při jejich rychlejší vývoji.
-Nutno zmínit, že REST API se stává internetovým standardem a dříve převládající SOAP je nyní na ústupu.
+Nyní se soustředím na hlavní rozdíly mezi těmito službami.
 
-Pro návrh REST API jsem se rozhodl použít \acrshort{raml}. Jedná se nový jazyk založení na formátu \acrshort{yaml}, který v říjnu 2014 přešel do verze 1.0. Díky \acrshort{yaml} je výsledný kód dobře čitelný. Pro vývoj jsem použil webové rozhraní od firmy MuleSoft\footnote{www.mulesoft.com}.  
+\begin{table}\centering
+\caption{Rozdíly mezi SOAP a REST}\label{tab:ws_compare}
+\begin{tabular}{|p{3cm}|p{3cm}|p{5.5cm}|}\hline
+Typ		& SOAP		& REST \tabularnewline \hline \hline
+Format dat\cite{ws_compare_swati}		& XML		& nezávislý (XML, JSON, plain) \tabularnewline \hline
+Protokol\cite{ws_compare_swati}		& více možných (HTTP, SMTP,..)		& HTTP \tabularnewline \hline
+Možnost cachování\cite{ws_compare_swati}		& ne		& ano \tabularnewline \hline	
+Formát specifikace\cite{ws_compare_table}\cite{ws_compare_soapui} & WSDL\cite{ws_soap_wsdl}	& existují formáty jako \acrshort{wadl}\cite{ws_wadl}, Swagger\cite{ws_swagger}, \acrshort{raml}\cite{ws_raml} a další, ale žádný nemůžeme považovat na hlavní \cite{ws_comparison} \tabularnewline \hline 		 
+Vystavuje\cite{ws_compare_steve}		& operace & zdroje \tabularnewline \hline
+Zabezpečení\cite{ws_compare_steve}		& SSL + WS-Security & SSL \tabularnewline \hline  
+Rozšířenost\cite{ws_compare_steve}		& \multicolumn{2}{p{8.5cm}|}{REST získává na stále větší popularitě . Příkladem uvedu např. Google, který se nahradil své dřívější SOAP API právě RESTem.}  \tabularnewline \hline 
+Rychlost zpracování\cite{ws_compare_armel} 	& \multicolumn{2}{p{8.5cm}|}{XML parsing je pomalejší než JSON}  \tabularnewline \hline 	 		  		
+Jednodušší implementace\cite{ws_compare_swati}		&\multicolumn{2}{p{8.5cm}|}{u RESTu na straně klienta i serveru} \tabularnewline \hline 	 				
+\end{tabular}
+\end{table}
+
+Návrh nepočítá s využitím zabezpečení (přihlášení bude řešeno pomocí tokenu \todo{link na zabezpeceni})  a komunikace bude probíhat přes HTTP protokol (SOAP ztrácí výhodu).
+Myšlenkou RESTu je poskytnout CRUD\cite{ws_compare_steve} operace nad vystavenými zdroji\cite{ws_crud} a to přesně odpovídá potřebám navrhovaného centrální uložení dat.  Další výhody jako rychlá implementace a přenos dat ve formátu JSON je podpořily volbu. 
+
+Volba pro \acrshort{ws} je REST.
+
+\label{ws_compare_mulesoft}
+Pro návrh REST API bude použit jazyk \acrshort{raml}. Jedná se nový jazyk založení na formátu \acrshort{yaml}, který v říjnu 2014 přešel do verze 1.0\cite{ws_raml} a na jehož vývoji se podílí technologičtí odborníci ze známých IT firem\cite{ws_raml_wiki}. Díky \acrshort{yaml} se kód dobře píše a výsledný dokumentace je čitelná. Pro vývoj bude použito webového prostředí od firmy MuleSoft\cite{ws_raml_mulesoft}. Jedná se o firmu, která se na \acrshort{raml} úzce propojena, protože na specifikaci \acrshort{raml} se  podílí její CTO\footnote{www.linkedin.com/in/sarid}.
 \vspace*{1\baselineskip}
 
-\subsubsection{Java}
+\todo{tabulka rest api}
+
+\subsubsection{Programovací jazyk -- Java}
 
 Volba programovacího jazyka byla pro mě jasná: \textit{Java}.
 
@@ -393,7 +429,7 @@ Java je perspektivní, velice rozšířený a univerzální jazyk s rozsáhlou k
 
 Přesto má volba pro Javu vzešla hlavně z mého zaměstnání a potřeby se v tomto programovacím jazyce zdokonalit. 
 
-\subsubsection{Spring}
+\subsubsection{Základní framework -- Spring}
 
 Nyní hledám framework, který mi umožní rychle implementovat REST API. Ve světě Javy na podobné otázky existuje vždy více možných odpovědí. 
 Podívejme se na hlavní možnosti:
@@ -409,15 +445,15 @@ Rozhodl jsem se pro Spring. Hlavním důvodem byl rozsah celého Spring framewor
 
 Méně častou volbou je mé rozhodnutí pro rozšíření Spring boot\footnote{projects.spring.io/spring-boot/}. Slouží pro vytváření stand-alone Spring aplikací a zlehčuje základní konfiguraci aplikace. Pozitivním efektem je také odstranění \acrshort{xml} konfigurací.
 
-\subsubsection{Hibernate}
-
+\subsubsection{Persistence dat -- Hibernate}
+\label{technology:hibernate}
 Pro persistenci dat jsem zvolil framework Hibernate\footnote{hibernate.org}. 
 
 Používá \acrshort{orm}, což je způsob, kdy je objektový model mapován na relační databázi. Programátor pomocí anotací (nejčastěji nad třídami modelu) definuje podobu databázových objektů, ale o samotnou správu na úrovni databáze se už nestará. Hibernate také zajišťuje nezávislost na použité databázi. Nicméně např. pro Oracle databázi je potřeba použít speciálních anotací (databáze nemá auto inkrementální sloupce a pracuje přes definici sekvencí hodnot).
 
 Použití Hibernate je Springem přímo podporováno a jeho konfigurace je velice snadná.
 
-\subsubsection {MySQL}
+\subsubsection {Databáze -- MySQL}
 
 Jako databázi jsem si zvolil MySQL. 
 
@@ -476,7 +512,7 @@ Závěrem analýzy existujících implementací osobního plánování je důraz
 \label{technologie:androdi:boostrap}
 Pro implementaci jsem se rozhodl použít framework Android-bootstrap od Donna Felkera \footnote{http://www.androidbootstrap.com/}.
 
-Framework představuje implementaci základní funkcí aplikace pro \acrshort{os} Android. Používá se jako základ při vytváření aplikace a umožňuje rychlý vývoj. Zdrojové kódy jsou přístupné na GitHubu, a autor se společně s komunitou podílejí na dalším rozvoji.\newline
+Framework dodává implementaci základních funkcí aplikace pro \acrshort{os} Android. Používá se jako základ při vytváření aplikace a umožňuje rychlý vývoj. Zdrojové kódy jsou přístupné na GitHubu, a autor se společně s komunitou podílejí na dalším rozvoji.\newline
 
 \textit{Obsahuje}
 \begin{itemize}[nosep]
@@ -487,7 +523,7 @@ Framework představuje implementaci základní funkcí aplikace pro \acrshort{os
 	\item \textit{jednotný grafický vzhled}	
 \end{itemize}
 
-Nevýhoda je nárok na verzi Android \acrshort{sdk} 15 a vyšší.
+Nevýhodou je nárok na verzi Android \acrshort{sdk} 15 a vyšší.
 
 
 \subsubsection {Verze SDK Android}
@@ -499,66 +535,128 @@ Použitím frameworku Bootstrap (viz \ref{technologie:androdi:boostrap}) jsem st
 
 Autoři Androidu doporučují volbou \acrshort{sdk} pokrýt 90\% aktivních zařízení\cite{android_sdk_recommendation}. V aktuálním zastoupení \acrshort{sdk} vede verze 19 a suma od verze 4.1 výše je cca 88\%\cite{android_sdk_graph}. 
 
+\subsubsection{Facebook}
+\todo{Facebook}
 
-
-\subsubsection{Aplikace}
-
-java potřebuje aplikační server
-
-potřebujeme webový server
-
-ideálně na jednom místě
-
-\subsubsection{openshift}
-
-jednoduché ovládání bez nutnosti ruční instalace
-
-zdarma
-
-ale ukázalo se jako nestabilní
-
-\subsubsection{Digiocean}
-
-studentský pack s 100 dolary pro založení a užívání server
-
-slouží jako virtuální server na který si uživatel vše potřebné nainstaluje
-
-složitější instalace
-
-funkční 
+\subsubsection{Google}
+\todo{Google navrh}
 
 \chapter{Návrh}
 
-Krátká kapitola pouze zmíním základní 
+Tato kapitola se zaměřuje na definování základních charakteristik aplikace. Najdete zde návrh specifikace REST API a webového vývojového prostředí od společnosti Mulesoft, které je k návrhu použito. 
+
+Kapitola dále popisuje použitý datovým model.
+
+Nakonec se seznámíte s postupem pro propojení mobilní aplikace na Facebook a Google kalendář. Přidělíme každé aplikaci oddělené úkoly. Mobilní aplikace zajistí přihlášení uživatele a získání access tokenu. Tento token předáme aplikaci pro centrální uložení dat a ta zajistí samotnou práci s API protistrany.
 
 \section{REST API}
+\label{rest_api_design}
 
-tabulky volání
+Budeme pracovat s těmito čtyřmi metodami HTTP \ref{tab:RESTfulAPI_definice}:
 
-způsob zabezpečení pomocí tokenu
+\begin{table}[!h]\centering
+\caption{Funkce HTTP method}\label{tab:RESTfulAPI_definice}
+	\begin{tabular}{l c}
+		\toprule
+		\textbf{HTTP metoda} & \textbf{Popis} \\ \midrule \midrule
+		GET & získá informace daného zdroje  \\ \midrule	
+		POST & vytvoří nový zdroj\\ \midrule
+		PUT & aktualizuje daný zdroj  \\ \midrule
+		DELETE & smaže daný zdroj \\ \bottomrule
+	\end{tabular}
+\end{table}
 
-SOAP UI jako testy řízený vývoj?
+Navržené REST API rozhraní je zobrazeno v tabulkách \ref{tab:RESTfulAPI_rozhrani_s} a \ref{tab:RESTfulAPI_rozhrani_s} (* -- představuje společnou URL adresu určenou nasazením a verzí API).
 
-\section{Datový model}
+\begin{table}\centering
+\caption{Rozhraní REST API přístupné s tokenem}\label{tab:RESTfulAPI_rozhrani_s}
+	\begin{tabular}[t]{l l c}
+		\toprule
+		\textbf{Zdroj URI} & \textbf{HTTP metoda}\\ \midrule \midrule
+		1&*/projects/ & POST \\ \midrule
+		2&*/projects/ & GET \\ \midrule
+		3&*/projects/\{id\} & GET \\ \midrule
+		4&*/projects/\{id\} & PUT \\ \midrule
+		5&*/projects/\{id\} & DELETE \\ \midrule  
+		6&*/tasks/ & POST \\ \midrule
+		7&*/tasks/ & GET \\ \midrule
+		8&*/tasks/\{id\} & GET \\ \midrule
+		9&*/tasks/\{id\} & PUT \\ \midrule
+		10&*/tasks/\{id\} & DELETE \\ \midrule       
+		11&*/tasks/\{id\}/facebookPublish & POST \\ \midrule
+		12&*/tasks/\{id\}/googlePublish & POST \\ \midrule
+		13&*/persons/ & GET \\ \midrule
+		14&*/persons/\{id\} & GET \\ \midrule
+		15&*/persons/\{id\} & PUT \\ \midrule
+		16&*/persons/\{id\} & DELETE \\ \midrule  	
+		17&*/persons/auth & GET \\ \midrule  				
+	\end{tabular}
+\end{table}
+
+\begin{table}\centering
+	\caption{Rozhraní REST API přístupné bez tokenu}\label{tab:RESTfulAPI_rozhrani_bez}
+	\begin{tabular}{l c}
+		\toprule
+		\textbf{Zdroj URI} & \textbf{HTTP metoda}\\ \midrule \midrule
+		*/authenticate/\{userLogin\} & GET \\ \midrule
+		*/persons & POST \\ \midrule
+	\end{tabular}
+\end{table}
+
+
+Na základě volby v \ref{ws_compare_mulesoft} vznikl návrh REST API ve webovém vývojovém prostředí Mulesoft.\newline 
+
+\begin{tabular}{l l}
+	Přístupné přes:&\href{''https://anypoint.mulesoft.com/#/signin''}{Mulesoft API Designer}\\
+	Příhlašovací jmeno:&drugnanov\\
+	Heslo:&Qazwsxedc369\\
+\end{tabular}
 
 \begin{figure}[h!]\centering
-	\includegraphics[width=1\textwidth]{pictures/gtd_data_model}
-	\caption{Data model (generováno pomocí MySQL Workbench)})\label{fig:gtd_data_model}
+	\includegraphics[width=1\textwidth]{pictures/gtd_raml_anypoint}
+	\caption{Webové prostředí pro návrh REST API ve specifikaci RAML od firmy Mulesoft}\label{fig:gtd_raml_ide}
 \end{figure}
 
-lehce popsat
+Práce s tímto prostředím je příjemná. Některé funkce potřebují ještě vylepšit. Chybí inline nápověda v kontextu specifikace RAML a např. auto complete nepracuje s objekty vytvořenými uživatelem. Zároveň příkladů návrhu API v jazyku RAML na webu není mnoho. To bohužel prodlužuje čas učení a samotného návrhu. Přesto má tento nástroj vykročeno stát se součásti DDD\cite{ws_raml_ddd}. 
 
-středobot jsou tasky
-person token
+\section{Databázový model}
+\label{design:database_model}
+V \ref{technology:hibernate} jsem se rozhodli pro použití Hibernatu. To nám umožňuje specifikovat strukturu databáze přímo v datovém modelu aplikace. Specifikace se provádí pomocí anotací nad objekty tříd, metod a atributů\cite{design_hibernate_annotations}. 
 
 
 \chapter{Realizace}
 
+V této kapitole se seznámíme s praktickým použitím dříve zvolených technologií. U aplikace pro centrální uložení dat si ukážeme strukturu projektu, podobu práce s REST API, generování struktury databáze pomocí hibernatu, identifikace uživatele s použitím tokenu a práci s API Facebooku a Google kalendáře.
+U android aplikace si uk\todo{co s ukážeme u android aplikace}
+\newpage
+
 \subsection{Aplikace pro centrální uložení dat}
 
-\subsubsection{Rozložení projektu}
+Zde si ukážeme části implementace aplikace pro centrální uložení dat.
 
---složky a k čemu slouží
+\subsubsection{Struktura projektu}
+ 
+\begin{figure}[h!]
+\dirtree{%
+.1 libs\DTcomment{externi knihovny používané aplikací}.
+.1 src\DTcomment{základní balík implementace projektu}.
+.2 main\DTcomment{balík aplikace}.
+.3 java\DTcomment{složka s kódy aplikace}.
+.4 GTD\DTcomment{základní balík GTD}.
+.5 BL\DTcomment{balík buisiness vrstvy}.
+.5 DL\DTcomment{balík datové vrstvy}.
+.5 restapi\DTcomment{balík pro REST API}.
+.3 resources\DTcomment{složka obsahující konfigurace}.
+.4 database\DTcomment{složka obsahující pomocné skripty pro správu databáze}.
+.4 messages\DTcomment{složka pro stringové konstanty aplikace}.
+.4 gtd.api.properties\DTcomment{property aplikace}.
+.4 hibernate.cfg.xml\DTcomment{konfigurace hibernatu}.
+.4 logback.xml\DTcomment{konfigurace logování pomocí logbacku}.
+.2 test\DTcomment{složka obsahující unit testy}.
+.1 build.gradle\DTcomment{build soubor pro Gradle}.
+.1 settings.gradle\DTcomment{nastavení Gradlu}.
+}
+\end{figure}
 
 \subsubsection{REST API}
 
@@ -567,10 +665,42 @@ ukázka kontroleru
 odchycení výjímek
 
 ukázka servisy pro obsluhu volání (např add person)
+\subsubsection{Databáze}
 
-\subsubsection{Hibernate}
+Příklad použití anotací na základě \ref{realization:hibernate_example}.
 
-práce s DAO.
+\lstinputlisting[label=realization:hibernate_example,caption=Příklad použití Hiberante]{codes/hibernate_person.java}
+
+Význam anotací dle \cite{design_hibernate_annotations}.
+
+Doplněním anotací k prvkům datového modelu a konfigurací hibernatu byla v MySQL vygenerována následující databázová struktura \ref{fig:gtd_database_model}.
+
+\begin{figure}
+	\makebox[\textwidth][c]{\includegraphics[height=1.17\textwidth, angle=90]{pictures/gtd_entity_relationship_diagram}}
+	\caption{Databázový model}\label{fig:gtd_database_model}
+\end{figure}
+
+
+\subsubsection{Identifikace uživatele}
+
+Identifikace uživatele je realizována formou tokenu v hlavičce HTTP požadavku. Token lze získat pomocí dvou způsobů (viz. \ref{tab:RESTfulAPI_rozhrani_bez}):
+\begin{itemize}[nosep]
+	\item \textit{registrací} -- po vytvoření účtu je ve vráceném objektu \textit{osoby} obsažen také token
+	\item \textit{přihlášení} -- autentifikace pomocí loginu a hesla uživatele, v takovém případě je zpět vrácen pouze token a login uživatele.
+\end{itemize}
+
+Při vytvoření uživatele je token vygenerován automaticky. V případě přihlášení je vrácen aktivní token uživatele. Pokud uživatel token nemá (např. token byl deaktivován) a má právo si token vytvořit, je mu automaticky vygenerován.
+
+Pokud uživatel už aktivní token má, může použít dotaz číslo 17 z \ref{RESTfulAPI_rozhrani_s}. API na základě tokenu rozpozná \textit{osobu} a vrátí její objekt \textit{osoby} obsahující všechny tokeny. 
+
+Token je generován pomocí kódu v \ref{api_token_generated} (person je objekt typu Person).
+
+\begin{lstlisting}[label=api_token_generated,caption=Generování uživatelského tokenu]
+	String stringToCrypt = person.toString() + PersonToken.tokenSalt + currentTimeMillis();
+	String hash = HashConverter.md5(stringToCrypt);
+\end{lstlisting}
+
+
 
 \subsubsection{Facebook}
 
@@ -629,7 +759,21 @@ vypublickování tasku do google kalendáře
 
 --zpřístupnění kódu na GitHubu ano?
 
+\todo{AnyPoint}
+
+\todo{Program pro převod JSON do objedků  d:01.Skola01.Bakalarka30.Vyvoj BP GTD GeneratorPOJOs}
+
 \subsection{title}
+
+\section{Návrhy k rozvoji}
+Apple aplikace 
+Testování na reaálných zařízeních a úprava kódu aby to fungovalo
+
+refactoring Hibernate
+
+
+Fungování s email načtením
+
 \begin{conclusion}
 
 Metodika \GTD do mého života přinesla nový směr a podle něj se snažím řídit. Mysl potřebujeme použít k řešení problému a ne jako diář, který ještě funguje velmi podivně a události nám připomíná velmi nahodile. Diář si musíme vytvořit mimo ni. Na internetu nám k tomu pomůže celá řada produktů. Je jen na nás, který si vybereme. A volba je důležitá. Protože metodika nás nabádá, že musíme mít naprostou důvěru ke spolehlivosti svého systému a používat ho rádi. Plánování a revize úkolů se musí stát pravidelnou činností.
@@ -646,7 +790,7 @@ Nastudoval jsem specifikace API Facebooku a Google kalendáře. Umožňuji uživ
 
 Práce s API Facebook i Googlu pro mě znamenala cennou zkušenost a vidím v něm velký potenciál dalšího rozvoje. V moderním internetovém prostředí už nemůže aplikace existovat izolovaně, ale je třeba ji integrovat do existujícího prostředí. A tato integrace nemá být pouze pasivní, ale také aktivní.
 
-
+\todo{na čem je nasazeno, kolik lidí to používá a další rozvoj}
     
 
 

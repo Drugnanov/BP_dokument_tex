@@ -4,8 +4,19 @@ Database file #1: mybibliographyfile.bib
 Warning--I didn't find a database entry for "doit_overviewgram"
 Warning--to sort, need author or key in toodledo_overview
 Warning--to sort, need author or key in gtd_thin_client
+Warning--to sort, need author or key in ws_compare_soapui
+Warning--to sort, need author or key in ws_soap_wsdl
+Warning--to sort, need author or key in ws_wadl
+Warning--to sort, need author or key in ws_swagger
+Warning--to sort, need author or key in ws_raml
+Warning--to sort, need author or key in ws_comparison
+Warning--to sort, need author or key in ws_crud
+Warning--to sort, need author or key in ws_raml_wiki
+Warning--to sort, need author or key in ws_raml_mulesoft
 Warning--to sort, need author or key in wildfly
 Warning--to sort, need author or key in android_market
 Warning--to sort, need author or key in android_sdk_recommendation
 Warning--to sort, need author or key in android_sdk_graph
-(There were 7 warnings)
+Warning--to sort, need author or key in ws_raml_ddd
+Warning--to sort, need author or key in design_hibernate_annotations
+(There were 18 warnings)
