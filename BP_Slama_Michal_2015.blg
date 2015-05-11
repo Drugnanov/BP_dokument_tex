@@ -1,9 +1,26 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: BP_Slama_Michal_2015.aux
 The style file: csn690.bst
 Database file #1: mybibliographyfile.bib
+Repeated entry---line 403 of file mybibliographyfile.bib
+ : @misc{design_google_access_token
+ :                                 ,
+I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for "doit_overviewgram"
+Warning--I didn't find a database entry for "design_restapi_restf"
 Warning--to sort, need author or key in toodledo_overview
 Warning--to sort, need author or key in gtd_thin_client
+Warning--to sort, need author or key in design_facebook
+Warning--to sort, need author or key in design_facebook_usage
+Warning--to sort, need author or key in design_facebook_integration
+Warning--to sort, need author or key in design_facebook_access_tokens
+Warning--to sort, need author or key in design_facebook_developer
+Warning--to sort, need author or key in design_facebook_android_login
+Warning--to sort, need author or key in design_google_apps
+Warning--to sort, need author or key in design_google_usage
+Warning--to sort, need author or key in design_google_console
+Warning--to sort, need author or key in design_google_registration
+Warning--to sort, need author or key in design_google_signin_googleplus
+Warning--to sort, need author or key in design_google_access_token
 Warning--to sort, need author or key in ws_compare_soapui
 Warning--to sort, need author or key in ws_soap_wsdl
 Warning--to sort, need author or key in ws_wadl
@@ -17,6 +34,18 @@ Warning--to sort, need author or key in wildfly
 Warning--to sort, need author or key in android_market
 Warning--to sort, need author or key in android_sdk_recommendation
 Warning--to sort, need author or key in android_sdk_graph
+Warning--to sort, need author or key in design_facebook_sdk
+Warning--to sort, need author or key in design_google_play_service
+Warning--to sort, need author or key in design_google_play_service_need
+Warning--to sort, need author or key in design_android_retrofit
 Warning--to sort, need author or key in ws_raml_ddd
 Warning--to sort, need author or key in design_hibernate_annotations
-(There were 18 warnings)
+Warning--to sort, need author or key in realization_hibernate_generic
+Warning--to sort, need author or key in realization_spring_filter
+Warning--to sort, need author or key in design_google_quickstart
+Warning--to sort, need author or key in realization_androi_project_structure
+Warning--to sort, need author or key in realization_androi_manifest
+Warning--to sort, need author or key in http_statuses
+Warning--to sort, need author or key in android_threads
+Warning--to sort, need author or key in android_otto
+(There was 1 error message)

@@ -66,6 +66,7 @@
 	tabsize=2,
 	extendedchars=true,
 	breaklines=true,
+%	showstringspaces=true,
 	keywordstyle=\color{red},
 	frame=b,         
 	stringstyle=\color{white}\ttfamily,
@@ -354,17 +355,23 @@ Současné implementace můj závěr potvrzují. I u malých projektů je podpor
 Tato kapitola popisuje volbu technologií pro implementovanou aplikaci poskytující centrální uložení dat skrze \acrshort{ws} a aplikaci pro \acrshort{os} Android. Nároky na technologie vycházejí ze závěrů analýzy předešlé kapitoly a dále je rozvíjejí.
 Protože jedna z aplikací potřebuje hosting, budeme hledat vhodný server splňující naše potřeby.
 
+Seznámíme se postupem pro propojení mobilní aplikace na Facebook a Google kalendář. Přidělíme každé aplikaci oddělené úkoly. Mobilní aplikace zajistí přihlášení uživatele a získání access tokenu. Tento token předáme aplikaci pro centrální uložení dat a ta zajistí samotnou práci s API protistrany.
+
+Dále kapitola specifikuje REST API a ukazuje webového vývojového prostředí od společnosti Mulesoft, které je k návrhu použito. 
+
+Kapitola dále popisuje vytváření datového modelu.
+
 \section{Rozdělení aplikace}
 
 Ze závěrů analýzy vzešlo, že aplikace musí být pro uživatele dostupná více platformách zahrnující např. mobilní zařízení a web. Proto jsem se rozhodl rozdělit návrh aplikace na dvě části. První bude zajišťovat centrální uložení dat. Druhá pak zajistí pro uživatele samotné GUI pro osobní plánování a správu dat deleguje na první aplikaci. Díky tomuto návrhu se zbavím nutnosti implementovat uložení dat na každé uživatelské aplikaci.
 
 \subsection{Aplikace pro centrální uložení dat}
 
-Skrze \acrshort{ws} bude poskytovat centrální uložení dat do databáze. Služby budou dostupné přes internet a samotná aplikace bude nasazena do aplikačního serveru.
+Skrze \acrshort{ws} bude poskytovat centrální uložení dat do databáze. Služby budou dostupné přes internet a samotná aplikace bude nasazena na aplikační server. Současně umožní publikovat na Facebook a Google kalendář. 
 
 \subsection{Mobilní aplikace pro Android}
 
-První implementace GUI cílená na mobilní zařízení se systémem Android. Fungovat bude na  principu tenkého klienta\cite{gtd_thin_client}.
+První implementace GUI cílená na mobilní zařízení se systémem Android. Fungovat bude na  principu tenkého klienta\cite{gtd_thin_client}. Aplikace využije přihlašovací komponenty Facebooku a Googlu pomocí kterých získá uživatel prostředek pro autorizaci aplikace a přístup k publikaci dat do těchto sítí.
 
 \section{Model nasazení}
 
@@ -376,6 +383,104 @@ První implementace GUI cílená na mobilní zařízení se systémem Android. F
 \todo{Komentář, že se jedná o navazující projekt z SP2}
 Vycházení z návrhu rozdělení aplikace. GUI aplikace jsou unikátní pro každou platformu s centrální aplikací pro správu data komunikují přes HTTP protokol.
 
+\section{Facebook a Google kalendář}
+
+Aplikace pro osobní plánování nesmí být izolovanou. Zde si rozebereme návrh pro integraci do Facebooku a Google kalendáře. 
+
+\subsection{Facebook}
+
+\subsubsection{Proč Facebook}
+Facebook\cite{design_facebook} je v současnosti dominantní sociální sítí a jeho používání se pro mnohé stává denní samozřejmostí\cite{design_facebook_usage}. Poskytuje širokou možnost integrace např. \cite{design_facebook_integration}.
+
+Vývoj na \textit{zdi} uživatele se tak stává moderním deníkem. A do takového deníku uživatel může chtít informaci o tom co splnil nebo na čem právě pracuje.
+
+\subsubsection{Oddělení přihlášení od publikace}
+\label{design:facebook_divide_appliaction}
+	
+Dojde k oddělení funkce pro přihlášení uživatele a publikace.
+Android aplikace umožní uživateli přihlášení k Facebooku s cílem získat access token. Tento token bude následně předán aplikaci pro centrální uložení dat současně s informací identifikující úkol a ta zajistí jeho publikaci.
+
+Více k access tokenu na \cite{design_facebook_access_tokens}.
+
+\subsubsection{Přihlášení}
+
+Bude zajišťováno na straně Android aplikace.
+
+\textit{Musíme řešit:}
+\begin{itemize}[nosep]
+	\item \textit{registrace aplikace na straně Facebooku}
+	\item \textit{nastavení naší aplikace}
+\end{itemize}
+
+\textit{Registrace aplikace na straně Facebooku}
+
+Provádí se přes stránky \href{''https://developers.facebook.com/''}{Facebook developer}\cite{design_facebook_developer}.
+
+Příklad postupu lze najít na \cite{design_facebook_registration_example}. 
+
+\textit{Nastavení aplikace}
+
+Pro přihlášení uživatele využijeme komponentu a funkce z SDK Facebooku pro Android viz. 
+\label{technology:facebook_sdk}.
+
+Pro další nastavení budeme postupovat podle návodu v \cite{design_facebook_android_login}.
+
+Komponenta zajistí správu nad procesem přihlášením uživatele. Výstupem procesu přihlášení je objekt obsahující access token.
+
+\subsubsection{Publikace}
+
+Access token umožní autorizaci vůči Facebook API v rámci uživatelem schválených práv. V našem případě budeme mít přístup k editaci zdi uživatele.
+
+Testy nad Facebook API lze skrze \ref{design_facebook_grapapi_explorer}.
+
+%******************** GOOGLE ***********************
+
+\subsection{Google kalendář}
+
+\subsubsection{Proč Google kalendář}
+
+Google kalendář je součástí rodiny Google aplikací\cite{design_google_apps}. Ze statistik pro Gmail\cite{design_google_usage} můžeme odvodit, že se jedná o oblíbenou součást osobního i firemního plánování.
+
+Google kalendář dále umožňuje synchronizaci do dalších aplikací (např. \href{''https://tools.google.com/dlpage/gappssync''}{MS Outlook}) a pro různé platformy existují další aplikace pro zobrazení jeho dat (např. \href{''https://play.google.com/store/apps/details?id=org.withouthat.acalendar&hl=cs''}{aCalendar} pro Android). 
+
+\subsubsection{Oddělení přihlášení od publikace}
+
+Stejně jako u Facebooku \ref{design:facebook_divide_appliaction} oddělíme funkci na přihlášení a publikaci.
+
+Více o access tokenu na \ref{design_google_access_token}.
+
+\subsubsection{Přihlášení}
+
+Bude zajišťováno na straně Android aplikace.
+
+\textit{Musíme řešit:}
+\begin{itemize}[nosep]
+	\item \textit{registrace aplikace na straně Google}
+	\item \textit{nastavení naší aplikace}
+\end{itemize}
+
+\textit{Registrace aplikace na straně Google}
+
+Provádí se přes stránky \href{''https://console.developers.google.com''}{Google developer console}\cite{design_google_console}.
+
+Příklad postupu lze najít na \cite{design_google_registration}. 
+
+\textit{Nastavení aplikace}
+
+Pro přihlášení uživatele využijeme komponentu a funkce z Google play service viz. \ref{technology:google_play_service}. Komponentou bude Google+ Sign-in \cite{design_google_signin_googleplus}.
+
+Pro další nastavení budeme postupovat podle návodu v \cite{design_facebook_android_login}.
+
+Samotný proces přihlášení bude mít dvě fáze. V první kroku vyzveme uživatele k přihlášení pomocí svého google účtu. Po tomto kroku ještě nemáme potřebný přístup a musím následovat další krok ve kterém uživatele požádáme o přidělení potřebných práv pro naši aplikaci. Tím získáme potřebný access token\cite{design_google_access_token}. 
+
+\subsubsection{Publikace}
+
+Access token umožní autorizaci vůči Google API v rámci uživatelem schválených práv. V našem případě budeme mít přístup k datům v jeho Google kalendáři s právem editace a vyváření.
+
+Testy nad Google API lze skrze \ref{design_google_playgroundcebook_grapapi_explorer}.
+
+%******************** /GOOGLE ***********************
+ 
 \section{Technologie}
 
 \subsection{Aplikace pro centrální uložení dat}
@@ -453,6 +558,12 @@ Používá \acrshort{orm}, což je způsob, kdy je objektový model mapován na 
 
 Použití Hibernate je Springem přímo podporováno a jeho konfigurace je velice snadná.
 
+\subsubsection{Facebook -- Restfb }
+\label{design:technology_restfb}
+Restfb je klient pro práci s Facebook API\cite{design_restapi_restf}. 
+
+Neslouží k přihlášení uživatele, ale přijímá access token pro autorizaci požadavků. Poskytuje implementované rozhraní nad Facebook API, které zajišťuje odeslání a přijetí požadavku.
+
 \subsubsection {Databáze -- MySQL}
 
 Jako databázi jsem si zvolil MySQL. 
@@ -483,7 +594,6 @@ Jako další možnost byl server OpenShift\footnote{www.openshift.com}. Ten posk
 DigitalOcean poskytuje tzv. droplet. Funguje jako virtuální server a správce si volí \acrshort{os}, který je něm automaticky nainstalován. Další instalace se už provádějí přímo ve vybraném \acrshort{os}. Mou volbou byl Ubuntu verze 14. Jde jednoduchý a spolehlivý linuxový systém se kterým mám jen kladné zkušenosti. 
 
 DigitalOcean je placený, ale v rámci GitHub Education packu\footnote{education.github.com/pack} je pro studenty k dispozici 100 dolarový kapitál. To stačí na mnohaměsíční provoz i silnějších variant dropletů s více systémových prostředků. Pro naši aplikaci jsem zvolil variantu 2 GB paměti, 2 CPU, 40 GB SSD disk za 20 dolarů na měsíc.  
-
 
 \subsection{Mobilní aplikace pro Android}
 
@@ -535,19 +645,26 @@ Použitím frameworku Bootstrap (viz \ref{technologie:androdi:boostrap}) jsem st
 
 Autoři Androidu doporučují volbou \acrshort{sdk} pokrýt 90\% aktivních zařízení\cite{android_sdk_recommendation}. V aktuálním zastoupení \acrshort{sdk} vede verze 19 a suma od verze 4.1 výše je cca 88\%\cite{android_sdk_graph}. 
 
-\subsubsection{Facebook}
-\todo{Facebook}
+\subsubsection {Facebook SDK}
+\label{technology:facebook_sdk}
+Pro přístup k přihlášení na Facebook využijeme Facebook SDK \cite{design_facebook_sdk}.
 
-\subsubsection{Google}
-\todo{Google navrh}
+Poskytuje širokou škálu funkcí pro práci s touto sociální sítí. 
 
-\chapter{Návrh}
+Verze SDK a příslušné verze aplikace Facebook lze stáhnout na
+href{''https://developers.facebook.com/docs/android/downloads''}{Facebook SDK}.
 
-Tato kapitola se zaměřuje na definování základních charakteristik aplikace. Najdete zde návrh specifikace REST API a webového vývojového prostředí od společnosti Mulesoft, které je k návrhu použito. 
+\subsubsection {Google play service}
+\label{technology:google_play_service}
 
-Kapitola dále popisuje použitý datovým model.
+K přihlášení na Google použijeme Google play service\cite{design_google_play_service}.
 
-Nakonec se seznámíte s postupem pro propojení mobilní aplikace na Facebook a Google kalendář. Přidělíme každé aplikaci oddělené úkoly. Mobilní aplikace zajistí přihlášení uživatele a získání access tokenu. Tento token předáme aplikaci pro centrální uložení dat a ta zajistí samotnou práci s API protistrany.
+Google play service musí být současně nainstalována i na uživatelském mobilním zařízen\cite{design_google_play_service_need}.
+
+\subsubsection {Klient pro REST API - Retrofit}
+\label{technology:android_client_for_restapi}
+
+Pro konzumaci REST API použijeme implementaci klienta Retrofit \cite{design_android_retrofit}. Konfigurace a použití jsou velmi snadné a k dispozici je kvalitní dokumentace. Nevýhodou jsou vyšší nároky na paměť\cite{design_android_retrofit_benefit}.  	
 
 \section{REST API}
 \label{rest_api_design}
@@ -625,8 +742,8 @@ V \ref{technology:hibernate} jsem se rozhodli pro použití Hibernatu. To nám u
 
 
 \chapter{Realizace}
-
-V této kapitole se seznámíme s praktickým použitím dříve zvolených technologií. U aplikace pro centrální uložení dat si ukážeme strukturu projektu, podobu práce s REST API, generování struktury databáze pomocí hibernatu, identifikace uživatele s použitím tokenu a práci s API Facebooku a Google kalendáře.
+\todo{verze knihoven}
+V této kapitole se seznámíme s praktickým použitím dříve zvolených technologií. U aplikace pro centrální uložení dat si ukážeme strukturu projektu, podobu práce s REST API, generování struktury databáze pomocí frameworku hibernat, identifikace uživatele s použitím tokenu a práci s API Facebooku a Google kalendáře.
 U android aplikace si uk\todo{co s ukážeme u android aplikace}
 \newpage
 
@@ -660,11 +777,31 @@ Zde si ukážeme části implementace aplikace pro centrální uložení dat.
 
 \subsubsection{REST API}
 
-ukázka kontroleru
+\textit{Implementace je rozdělena na několika úrovní:}
+\begin{itemize}[nosep]
+	\item \textit{kontrolery}
+	\item \textit{servisy}  
+	\item \textit{persistence dat}	
+\end{itemize}
 
-odchycení výjímek
+\textit{Kontrolery}
 
-ukázka servisy pro obsluhu volání (např add person)
+Jejich úkolem je přijetí požadavku a odeslání odpovědi. Samotné zpracování delegují na servisy. Příklad v \ref{realization:restapi_controller}.
+
+\lstinputlisting[label=realization:restapi_controller,caption=Příklad třídy kontroleru]{codes/controller_task.java}
+
+\textit{Servisy}
+
+Na této úrovni se odehrává business logika. Každá servisa obsluhuje funkce pro zpracování konkrétní entity (např. task/projekt). Využívá k tomu vlastní implementaci, další servisy a datovou vrstvu příslušnou entitě kterou obsluhuje. Příklad v 
+
+\lstinputlisting[label=realization:restapi_servise,caption=Příklad třídy servisy]{codes/servise_person.java}
+
+\textit{Persistence dat}
+
+Využívá Hibernatu \ref{technology:hibernate} s implementací generiky\cite{realization_hibernate_generic} pro základní operace. Příklad v 
+
+\lstinputlisting[label=realization:restapi_controller,caption=Příklad třídy kontroleru]{codes/dao_person.java}
+
 \subsubsection{Databáze}
 
 Příklad použití anotací na základě \ref{realization:hibernate_example}.
@@ -680,9 +817,8 @@ Doplněním anotací k prvkům datového modelu a konfigurací hibernatu byla v 
 	\caption{Databázový model}\label{fig:gtd_database_model}
 \end{figure}
 
-
 \subsubsection{Identifikace uživatele}
-
+\label{realization:user_autentorization}
 Identifikace uživatele je realizována formou tokenu v hlavičce HTTP požadavku. Token lze získat pomocí dvou způsobů (viz. \ref{tab:RESTfulAPI_rozhrani_bez}):
 \begin{itemize}[nosep]
 	\item \textit{registrací} -- po vytvoření účtu je ve vráceném objektu \textit{osoby} obsažen také token
@@ -691,7 +827,7 @@ Identifikace uživatele je realizována formou tokenu v hlavičce HTTP požadavk
 
 Při vytvoření uživatele je token vygenerován automaticky. V případě přihlášení je vrácen aktivní token uživatele. Pokud uživatel token nemá (např. token byl deaktivován) a má právo si token vytvořit, je mu automaticky vygenerován.
 
-Pokud uživatel už aktivní token má, může použít dotaz číslo 17 z \ref{RESTfulAPI_rozhrani_s}. API na základě tokenu rozpozná \textit{osobu} a vrátí její objekt \textit{osoby} obsahující všechny tokeny. 
+Pokud uživatel už aktivní token má, může použít dotaz číslo 17 z \ref{tab:RESTfulAPI_rozhrani_s}. API na základě tokenu rozpozná \textit{osobu} a vrátí její objekt \textit{osoby} obsahující všechny tokeny. 
 
 Token je generován pomocí kódu v \ref{api_token_generated} (person je objekt typu Person).
 
@@ -700,41 +836,127 @@ Token je generován pomocí kódu v \ref{api_token_generated} (person je objekt 
 	String hash = HashConverter.md5(stringToCrypt);
 \end{lstlisting}
 
+Samotná kontrola tokenu v příchozím požadavku je realizována pomocí implementace vlastního filtru\cite{realization_spring_filter} viz. \ref{realization:auth_token_check}. 
 
+\lstinputlisting[label=realization:auth_token_check,caption=Filter pro kontrolu tokenu]{codes/auth_token_check.java}
 
 \subsubsection{Facebook}
+\label{realization:restapi_facebook}
 
-práce s access tokenem
+Podoba adresy pro publikaci úkolu na Facebook je v tabulce \ref{tab:RESTfulAPI_rozhrani_s} pod číslem 11. Z adresy je určen úkol, který se má publikovat a v těle požadavku je zaslán access token\ref{design:facebook_divide_appliaction}. 
 
-vypublikování tasku na zeď uživatele
+O publikování se stará třída FacebookPublisher využívající restfb\ref{design:technology_restfb}. Její ukázka \ref{realization:restapi_facebookpublisher}.
+\vspace*{1\baselineskip}
+\newline
+Kroky ke zpracování požadavku:
+\begin{enumerate}[nosep]
+	\item \textit{přijetí požadavku}
+	\item \textit{získání instancí uživatele a úkolu} 
+	\item \textit{kontrola jestli byl požadavek už dříve publikován} -- stejný úkol lze znovu odeslat po 24 hodinách od prvního odeslání	
+	\item \textit{vytvoření instance třídy facebookPublisher} -- v konstruktoru je předán access token
+	\item \textit{z úkolu je vytvořena textová zpráva} 
+	\item \textit{publikace zprávy pomoci restfb} 
+	\item \textit{kontrola vráceného id zprávy} -- po vytvoření Facebook API vrátí identifikaci vzniklého objektu
+	\item \textit{aktualizace úkolu o datum publikace a id zprávy}
+	\item \textit{konec zpracování}
+\end{enumerate}
+
+\lstinputlisting[label=realization:restapi_facebookpublisher,caption=Ukázka ze třídy FacebookPubliser]{codes/facebook_publish.java}
 
 \subsubsection{Google}
 
-práce s access tokenem
+Řešení je podobné verzi s Facebookem\ref{realization:restapi_facebook}.
 
-vypublickování tasku do google kalendáře
+Implementace čerpá z ukázky na \cite{design_google_quickstart}. Využíváme Google knihoven. Ty umožňují autorizaci pomocí access tokenu a poskytují specializované rozhraní pro publikaci na API Google kalendáře.
+
+O publikování se stará třída GooglePublisher. Její ukázka \ref{realization:restapi_googlepublisher}.
+\vspace*{1\baselineskip}
+\newline
+Kroky ke zpracování požadavku:
+\begin{enumerate}[nosep]
+	\item \textit{přijetí požadavku}
+	\item \textit{získání instancí uživatele a úkolu} 
+	\item \textit{kontrola jestli úkol nebyl dříve publikován a jedná se o úkol ve stavu v kalendáři}
+	\item \textit{vytvoření instance třídy googlePublisher} -- v konstruktoru je předán access token
+	\item \textit{vytvořena instance event z dat úkolu} 
+	\item \textit{publikace zprávy pomoci google api} 
+	\item \textit{kontrola vráceného id eventu} -- po vytvoření Googlee API vrátí identifikaci vzniklého objektu
+	\item \textit{aktualizace úkolu o datum publikace a id eventu}
+	\item \textit{konec zpracování}
+\end{enumerate}
+
+\lstinputlisting[label=realization:restapi_googlepublisher,caption=Ukázka ze třídy GooglePubliser]{codes/google_publish.java}
+
 
 
 \subsection{Mobilní aplikace pro Android}
 
-\subsubsection{Rozložení projektu}
+Dále si ukážeme části implementace aplikace pro centrální uložení dat.
 
---složky a k čemu slouží
+\subsubsection{Struktura projektu}
 
-\subsubsection{Konzumace REST API}
+Projekt respektuje konvenci pro adresářovou strukturu \cite{realization_androi_project_structure}.
 
--- konzumace rest api
+\begin{figure}[h!]
+	\dirtree{%
+		.1 libs\DTcomment{externi knihovny používané aplikací}.
+		.1 src\DTcomment{základní balík implementace projektu}.
+		.2 main\DTcomment{balík aplikace}.
+		.3 assets\DTcomment{soubory k použití}.
+		.3 java\DTcomment{složka s kódy aplikace}.
+		.4 cz.slama.android.gtd\DTcomment{balík GTD}.
+		.3 res\DTcomment{resoursy aplikace}.
+		.3 AndroidManifest.xml\DTcomment{manifest pro android aplikaci}.
+		.1 build.gradle\DTcomment{build soubor pro Gradle}.
+		.1 default.properties\DTcomment{property aplikace}.
+	}
+\end{figure}
+
+Za zmínku stojí soubor AndroidManifest.xml. Android systém ho používá jako zdroj základních informací o aplikaci\cite{realization_androi_manifest}. 
+
+\subsubsection{Klient pro konzumaci REST API}
+
+Retrofit \ref{technology:android_client_for_restapi} je potřeba nejdříve nakonfigurovat viz \ref{retrofit_configuration}. V naší konfiguraci definujeme základní část URL, interceptor pro přidání tokenu\ref{realization:user_autentorization} do HTTP hlavičky,
+\begin{itemize}[nosep]
+	\item \textit{společná část URL pro všechny požadavky}\ref{rest_api_design} 
+	\item \textit{errorhandler} -- zavolá se při chybě požadavku (chyba spojení, chybový HTTP status\cite{http_statuses}, \dots)
+	\item \textit{interceptor pro přidání tokenu}\ref{realization:user_autentorization}
+	\item \textit{úroveň logování}
+	\item \textit{parser pro data} -- data jsou ve formátu JSON a pro parsování je použita knihovna GSON\cite{retrofit_gson}.
+\end{itemize}
+
+\lstinputlisting[label=realization:retrofit_configuration,caption=Konfigurace Retrofit]{codes/retrofit_configuration.java}
+
+Dalším krokem je specifikace rozhraní\footnote{https://docs.oracle.com/javase/tutorial/java/concepts/interface.html} pro volání konkrétního API (příklad je v \ref{realization:retrofit_interface}). Rozhraní definuje adresu volaného API (k hodnotě je přidána společná URL) a parametry vstupu/ výstupu.
+
+\lstinputlisting[label=realization:retrofit_interface,caption=Definice rozhraní pro Retrofit]{codes/retrofit_interface.java}
+
+A konečně propojíme předešlé dva body\ref{realization:retrofit_boostrap}. Příklad volání \ref{retrofit_example_call}.
+
+\lstinputlisting[label=realization:retrofit_boostrap,caption=Třída pro práci s Retrofit]{codes/retrofit_bootstrap_service.java}
+
+\lstinputlisting[label=retrofit_example_call,caption=Příklad volání Retrofit]{codes/retrofit_example.java}
 
 \subsubsection{Asynchronní načítání dat}
 
---ukázka takového volání 
+Práce s daty přes REST API je operace vyžadující čas. Takovou operaci nesmíme provádět v hlavním vlákně aplikace\cite{android_threads}. Protože spuštění náročné operace v hlavním vlákně vede z pohledu uživatele k \uv{zamrznutí} aplikace. Co hůře, pokud je vlákno vytíženo déle jak 5s dojde k zobrazení hlášení \uv{application not responding}. Řešením je asynchronní zpracování, které neblokuje hlavní vlákno, ale vytváří si vlastní.
 
---jak se při získání/ nezískání výsledku
+Implementace asynchronního zpracování je součástí \ref{technologie:androdi:boostrap}. Objekt se jmenuje \textit{SafeAsyncTask}.
 
---Bus listenery
+Příklad takového zpracování \ref{adnroid_async_task}. Funkce \textit{handleAction} je volána při stisku tlačítka pro akci u úkolu. První části zkontrolujeme jestli asynchronní task už neběží. 
+\begin{itemize}[nosep]
+	\item \textit{uživatel klikl na tlačítko pro akci u úkolu} -- pro řešení této události je u tlačítka registrována funkce \textit{handleAction} 
+	\item \textit{zkontrolujeme, že asynchronní task neexistuje} -- ochrana, abychom task nespustili vícekrát
+	\item \textit{vytvoříme task typu SafeAsyncTask} -- překryjeme funkce podle zamýšleného chování
+	\item \textit{task spustíme}
+\end{itemize}
+
+Za zmínku stojí dvě cesty pro zpracování výjimek. Jedna je součástí samotného asynchronní části \textit{onException}. V případě chyby při volání API \ref{Klient pro konzumaci REST API} jsou volány zaregistrování posluchači pro konkrétní události. Požita je knihovna Otto\cite{android_otto}. V ukázce jsou posluchači funkce s anotaci \textit{@Subscribe}.
+
+\lstinputlisting[label=adnroid_async_task,caption=Příklad asyncchronního volání]{codes/android_asyncTasks.java}
 
 \subsubsection{Facebook}
-
+\label{realization:android_facebook}
 -- jak zalozi aplikaci na facebooku a spravne ji nastavit
 
 -- nastaveneni projektu
@@ -742,6 +964,7 @@ vypublickování tasku do google kalendáře
 -- ziskani access tokenu přihlášením uživatele 
 
 \subsubsection{Google}
+\label{realization:android_google}
 
 -- jak zalozi aplikaci na facebooku a spravne ji nastavit
 
@@ -767,12 +990,19 @@ vypublickování tasku do google kalendáře
 
 \section{Návrhy k rozvoji}
 Apple aplikace 
+
 Testování na reaálných zařízeních a úprava kódu aby to fungovalo
+
+HTML5?
+
+napojení na emailové servery
 
 refactoring Hibernate
 
 
 Fungování s email načtením
+
+\todo{Výpis hlavních použitých termínů jako má Honza}
 
 \begin{conclusion}
 

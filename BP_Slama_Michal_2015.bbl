@@ -31,6 +31,61 @@ Saunders, G. J.~M.: Wunderlist — UI peculiarities. [online], 2013, [cit.
 Thin client. [online], 2015, [cit. 2015-04-29].
 \urlprefix\biburl{http://en.wikipedia.org/wiki/Thin_client}
 
+\bibitem{design_facebook}
+Facebook. [online], 2015, [cit. 2015-05-05].
+\urlprefix\biburl{https://www.facebook.com/}
+
+\bibitem{design_facebook_usage}
+Social Media Update 2014. [online], 2015, [cit. 2015-05-05].
+\urlprefix\biburl{http://www.statista.com/statistics/272014/global-social-networks-ranked-by-number-of-users}
+
+\bibitem{design_facebook_integration}
+10 Ways to Add Facebook Functionality to Your Website. [online], 2011, [cit.
+  2015-05-05].
+\urlprefix\biburl{http://www.socialmediaexaminer.com/10-ways-to-add-facebook-functionality-to-your-website}
+
+\bibitem{design_facebook_access_tokens}
+Access Tokens. [online], 2015, [cit. 2015-05-10].
+\urlprefix\biburl{https://developers.facebook.com/docs/facebook-login/access-tokens}
+
+\bibitem{design_facebook_developer}
+Facebook developer. [online], 2015, [cit. 2015-05-05].
+\urlprefix\biburl{https://developers.facebook.com/}
+
+\bibitem{design_facebook_registration_example}
+Bais, T.: Facebook developer. [online], 2014, [cit. 2015-05-05].
+\urlprefix\biburl{http://examples.javacodegeeks.com/core-java/android-facebook-login-example}
+
+\bibitem{design_facebook_android_login}
+Facebook Login for Android. [online], 2015, [cit. 2015-05-10].
+\urlprefix\biburl{https://developers.facebook.com/docs/facebook-login/android/v2.3}
+
+\bibitem{design_google_apps}
+Google Apps for Work. [online], 2015, [cit. 2015-05-10].
+\urlprefix\biburl{http://en.wikipedia.org/wiki/Google_Apps_for_Work}
+
+\bibitem{design_google_usage}
+By the Numbers: 10 Amazing Gmail Statistics. [online], 2015, [cit. 2015-05-10].
+\urlprefix\biburl{http://expandedramblings.com/index.php/gmail-statistics}
+
+\bibitem{design_google_console}
+Google developers console. [online], 2015, [cit. 2015-05-10].
+\urlprefix\biburl{https://console.developers.google.com}
+
+\bibitem{design_google_registration}
+Start integrating Google Sign-In into your Android app. [online], 2015, [cit.
+  2015-05-10].
+\urlprefix\biburl{https://developers.google.com/identity/sign-in/android/getting-started}
+
+\bibitem{design_google_signin_googleplus}
+Google+ Sign-in for Android. [online], 2015, [cit. 2015-05-10].
+\urlprefix\biburl{https://developers.google.com/+/mobile/android/sign-in}
+
+\bibitem{design_google_access_token}
+Getting Started with the Tasks API and OAuth 2.0 on Android. [online], 2013,
+  [cit. 2015-05-10].
+\urlprefix\biburl{https://developers.google.com/google-apps/tasks/oauth-and-tasks-on-android}
+
 \bibitem{ws_compare_swati}
 Dhingra, S.: REST vs. SOAP: How to choose the best Web service. [online], 2013,
   [cit. 2015-05-05].
@@ -114,6 +169,26 @@ Supporting Different Platform Versions. [online], 2015, [cit. 2015-04-29].
 Dashboards. [online], 2015, [cit. 2015-04-29].
 \urlprefix\biburl{http://developer.android.com/about/dashboards/index.html}
 
+\bibitem{design_facebook_sdk}
+Facebook SDK for Android. [online], 2015, [cit. 2015-05-10].
+\urlprefix\biburl{https://developers.facebook.com/docs/android}
+
+\bibitem{design_google_play_service}
+Google Play Services. [online], 2015, [cit. 2015-05-10].
+\urlprefix\biburl{https://developer.android.com/google/play-services/index.html}
+
+\bibitem{design_google_play_service_need}
+Setting Up Google Play Services. [online], 2015, [cit. 2015-05-10].
+\urlprefix\biburl{https://developer.android.com/google/play-services/setup.html}
+
+\bibitem{design_android_retrofit}
+Retrofit. [online], 2015, [cit. 2015-05-10].
+\urlprefix\biburl{http://square.github.io/retrofit}
+
+\bibitem{design_android_retrofit_benefit}
+TAG, L.: Retrofit. [online], 2013, [cit. 2015-05-10].
+\urlprefix\biburl{http://stackoverflow.com/questions/16902716/comparison-of-android-networking-libraries-okhttp-retrofit-volley}
+
 \bibitem{ws_raml_ddd}
 RAML: DDD (Delight-Driven Development) For APIs, Uri Sarid 20140716. [online],
   2014, [cit. 2015-05-05].
@@ -122,5 +197,42 @@ RAML: DDD (Delight-Driven Development) For APIs, Uri Sarid 20140716. [online],
 \bibitem{design_hibernate_annotations}
 Hibernate Annotations. [online], 2010, [cit. 2015-05-05].
 \urlprefix\biburl{https://docs.jboss.org/hibernate/annotations/3.5/reference/en/html_single}
+
+\bibitem{realization_hibernate_generic}
+Generic Dao Find All : DAO Generic DAO « Hibernate « Java. [online], [cit.
+  2015-05-05].
+\urlprefix\biburl{http://www.java2s.com/Code/Java/Hibernate/GenericDaoFindAll.htm}
+
+\bibitem{realization_spring_filter}
+Package org.springframework.web.filter. [online], 2015, [cit. 2015-05-05].
+\urlprefix\biburl{http://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/web/filter/package-summary.html}
+
+\bibitem{design_google_quickstart}
+Java Quickstart. [online], 2015, [cit. 2015-05-10].
+\urlprefix\biburl{https://developers.google.com/google-apps/calendar/quickstart/java}
+
+\bibitem{realization_androi_project_structure}
+Directory Structure of an Android Project. [online], 2015, [cit. 2015-05-10].
+\urlprefix\biburl{http://www.compiletimeerror.com/2013/01/directorystructure-of-android-project.html}
+
+\bibitem{realization_androi_manifest}
+App Manifest. [online], 2015, [cit. 2015-05-10].
+\urlprefix\biburl{http://developer.android.com/guide/topics/manifest/manifest-intro.html}
+
+\bibitem{http_statuses}
+List of HTTP status codes. [online], 2015, [cit. 2015-05-10].
+\urlprefix\biburl{http://en.wikipedia.org/wiki/List_of_HTTP_status_codes}
+
+\bibitem{retrofit_gson}
+Singh, I.: Gson User Guide. [online], 2015, [cit. 2015-05-11].
+\urlprefix\biburl{https://sites.google.com/site/gson/gson-user-guide}
+
+\bibitem{android_threads}
+Processes and Threads. [online], 2015, [cit. 2015-05-11].
+\urlprefix\biburl{http://developer.android.com/guide/components/processes-and-threads.html}
+
+\bibitem{android_otto}
+Otto. [online], 2015, [cit. 2015-05-11].
+\urlprefix\biburl{http://square.github.io/otto}
 
 \end{thebibliography}
