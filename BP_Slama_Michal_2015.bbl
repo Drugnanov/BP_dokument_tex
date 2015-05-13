@@ -27,6 +27,22 @@ Saunders, G. J.~M.: Wunderlist — UI peculiarities. [online], 2013, [cit.
   2015-04-29].
 \urlprefix\biburl{http://blog.garethjmsaunders.co.uk/tag/wunderlist/}
 
+\bibitem{gtd_existing_compare_toodledo}
+Toodledo. [online], 2015, [cit. 2015-05-11].
+\urlprefix\biburl{www.toodledo.com}
+
+\bibitem{gtd_existing_compare_doit}
+Doit.im. [online], 2015, [cit. 2015-05-11].
+\urlprefix\biburl{doit.im}
+
+\bibitem{gtd_existing_compare_wunderlist}
+Wunderlist. [online], 2015, [cit. 2015-05-11].
+\urlprefix\biburl{www.wunderlist.com}
+
+\bibitem{gtd_existing_compare_todolist}
+ToDoList. [online], 2015, [cit. 2015-05-11].
+\urlprefix\biburl{todoist.com}
+
 \bibitem{gtd_thin_client}
 Thin client. [online], 2015, [cit. 2015-04-29].
 \urlprefix\biburl{http://en.wikipedia.org/wiki/Thin_client}
@@ -68,6 +84,11 @@ Google Apps for Work. [online], 2015, [cit. 2015-05-10].
 By the Numbers: 10 Amazing Gmail Statistics. [online], 2015, [cit. 2015-05-10].
 \urlprefix\biburl{http://expandedramblings.com/index.php/gmail-statistics}
 
+\bibitem{design_google_access_token_guilde}
+Android: using Google sign in to get access token. [online], 2014, [cit.
+  2015-05-10].
+\urlprefix\biburl{http://stackoverflow.com/questions/15098834/android-using-google-sign-in-to-get-access-token}
+
 \bibitem{design_google_console}
 Google developers console. [online], 2015, [cit. 2015-05-10].
 \urlprefix\biburl{https://console.developers.google.com}
@@ -85,6 +106,10 @@ Google+ Sign-in for Android. [online], 2015, [cit. 2015-05-10].
 Getting Started with the Tasks API and OAuth 2.0 on Android. [online], 2013,
   [cit. 2015-05-10].
 \urlprefix\biburl{https://developers.google.com/google-apps/tasks/oauth-and-tasks-on-android}
+
+\bibitem{design_google_playground}
+OAuth 2.0 Playground. [online], 2015, [cit. 2015-05-10].
+\urlprefix\biburl{https://developers.google.com/oauthplayground}
 
 \bibitem{ws_compare_swati}
 Dhingra, S.: REST vs. SOAP: How to choose the best Web service. [online], 2013,
@@ -131,6 +156,11 @@ Nene, A.: Web Services Architecture – When to Use SOAP vs REST. [online],
   2014, [cit. 2015-05-05].
 \urlprefix\biburl{http://java.dzone.com/articles/web-services-architecture}
 
+\bibitem{ws_compare_xml_json_process}
+Daněk, B.~A.: \emph{Vyhodnocení a srovnání technologií pro servisně
+  orientovanou architekturu}. Diplomov\'a pr\'ace, České vysoké učení
+  technické v Praze, 2014.
+
 \bibitem{ws_crud}
 Create, read, update and delete. [online], 2015, [cit. 2015-05-05].
 \urlprefix\biburl{http://en.wikipedia.org/wiki/Create,_read,_update_and_delete}
@@ -142,6 +172,28 @@ RAML (software). [online], 2014, [cit. 2015-05-05].
 \bibitem{ws_raml_mulesoft}
 Mulesoft. [online], 2014, [cit. 2015-05-05].
 \urlprefix\biburl{www.mulesoft.com}
+
+\bibitem{technology_spring_boot}
+Should You Use Spring Boot in Your Next Project? [online], 2015, [cit.
+  2015-05-11].
+\urlprefix\biburl{http://steveperkins.com/use-spring-boot-next-project}
+
+\bibitem{technology_hibernate}
+Hibernate. [online], 2015, [cit. 2015-05-11].
+\urlprefix\biburl{hibernate.org}
+
+\bibitem{technology_hibernate_sequence}
+How to use existing Oracle sequence to generate id in hibernate? [online],
+  2010, [cit. 2015-05-11].
+\urlprefix\biburl{http://stackoverflow.com/questions/2155376/how-to-use-existing-oracle-sequence-to-generate-id-in-hibernate}
+
+\bibitem{design_restapi_restfb}
+Allen, M.: restfb. [online], 2015, [cit. 2015-05-10].
+\urlprefix\biburl{http://restfb.com}
+
+\bibitem{technology_mysql_vs_oracle}
+MySQL versus Oracle Features/Functionality. [online], 2008, [cit. 2015-05-11].
+\urlprefix\biburl{https://blogs.oracle.com/GeorgeTrujillo/entry/mysql_versus_oracle_features_functionality}
 
 \bibitem{wildfly}
 What is WildFly? [online], 2015, [cit. 2015-04-29].
@@ -234,5 +286,75 @@ Processes and Threads. [online], 2015, [cit. 2015-05-11].
 \bibitem{android_otto}
 Otto. [online], 2015, [cit. 2015-05-11].
 \urlprefix\biburl{http://square.github.io/otto}
+
+\bibitem{android_launcher_activity}
+Starting an Activity. [online], 2015, [cit. 2015-05-11].
+\urlprefix\biburl{http://developer.android.com/training/basics/activity-lifecycle/starting.html}
+
+\bibitem{android_signing}
+Signing Your Applications. [online], 2015, [cit. 2015-05-11].
+\urlprefix\biburl{http://developer.android.com/tools/publishing/app-signing.html}
+
+\bibitem{android_facebook_manifest}
+Getting Started Android SDK. [online], 2015, [cit. 2015-05-11].
+\urlprefix\biburl{developers.facebook.com/docs/android/getting-started}
+
+\bibitem{android_shared_prefereces}
+SharedPreferences. [online], 2015, [cit. 2015-05-11].
+\urlprefix\biburl{http://developer.android.com/reference/android/content/SharedPreferences.html}
+
+\bibitem{android_google_guide}
+Android Quickstart. [online], 2015, [cit. 2015-05-11].
+\urlprefix\biburl{https://developers.google.com/google-apps/calendar/quickstart/android}
+
+\bibitem{android_google_fingerprint}
+matreshkin: Get certificate fingerprint from android app. [online], 2014, [cit.
+  2015-05-11].
+\urlprefix\biburl{http://stackoverflow.com/questions/9293019/get-certificate-fingerprint-from-android-app}
+
+\bibitem{android_google_incremental_scopes}
+Authorizing API requests. [online], 2015, [cit. 2015-05-11].
+\urlprefix\biburl{https://developers.google.com/+/api/oauth}
+
+\bibitem{digitalocean_droplet}
+Sverdlov, E.: How To Create Your First DigitalOcean Droplet Virtual Server.
+  [online], 2012, [cit. 2015-05-11].
+\urlprefix\biburl{https://www.digitalocean.com/community/tutorials/how-to-create-your-first-digitalocean-droplet-virtual-server}
+
+\bibitem{digitalocean_java}
+Vlaswinkel, K.: How To Install Java on Ubuntu with Apt-Get. [online], 2014,
+  [cit. 2015-05-11].
+\urlprefix\biburl{https://www.digitalocean.com/community/tutorials/how-to-install-java-on-ubuntu-with-apt-get}
+
+\bibitem{digitalocean_wildfly}
+gesker: WildFly 8.2.0 on Ubuntu 14.04. [online], 2015, [cit. 2015-05-11].
+\urlprefix\biburl{https://gesker.wordpress.com/2015/02/17/quick-install-wildfly-8-2-0-on-ubuntu-14-04}
+
+\bibitem{digitalocean_phpMyAdmin}
+Sverdlov, E.: How To Install and Secure phpMyAdmin on Ubuntu 12.04. [online],
+  2012, [cit. 2015-05-11].
+\urlprefix\biburl{https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-phpmyadmin-on-ubuntu-12-04}
+
+\bibitem{github_guide}
+Adding an existing project to GitHub using the command line. [online], 2015,
+  [cit. 2015-05-11].
+\urlprefix\biburl{https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line}
+
+\bibitem{testing_soapui}
+SOAP UI. [online], 2015, [cit. 2015-05-11].
+\urlprefix\biburl{www.soapui.org}
+
+\bibitem{todo_html5}
+HTML5. [online], 2015, [cit. 2015-05-11].
+\urlprefix\biburl{http://en.wikipedia.org/wiki/HTML5}
+
+\bibitem{todo_sencha}
+Sencha. [online], 2015, [cit. 2015-05-11].
+\urlprefix\biburl{http://www.sencha.com/}
+
+\bibitem{todo_email_stats}
+van Rijn, J.: The ultimate mobile email statistics overview. [online], 2015,
+  [cit. 2015-05-11].
+\urlprefix\biburl{http://www.emailmonday.com/mobile-email-usage-statistics}
 
 \end{thebibliography}

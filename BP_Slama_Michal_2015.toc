@@ -2,7 +2,7 @@
 \select@language {czech}
 \contentsline {subsection}{Odkaz na tuto pr{\' a}ci}{viii}{section*.1}
 \contentsline {chapter}{Todo list}{1}{section*.4}
-\contentsline {chapter}{{\' U}vod}{3}{chapter*.7}
+\contentsline {chapter}{{\' U}vod}{3}{chapter*.6}
 \contentsline {chapter}{\chapternumberline {1}C\IeC {\'\i }l pr\IeC {\'a}ce}{5}{chapter.1}
 \contentsline {chapter}{\chapternumberline {2}Anal\IeC {\'y}za metodiky \textit {GTD }}{7}{chapter.2}
 \contentsline {section}{\numberline {2.1}Metodika GTD - M\IeC {\'\i }t v\IeC {\v s}e hotovo}{7}{section.2.1}
@@ -18,61 +18,62 @@
 \contentsline {subsection}{\numberline {2.2.2}Doit.im}{12}{subsection.2.2.2}
 \contentsline {subsection}{\numberline {2.2.3}Wunderlist}{13}{subsection.2.2.3}
 \contentsline {subsection}{\numberline {2.2.4}Todoist}{14}{subsection.2.2.4}
-\contentsline {section}{\numberline {2.3}Shrnut\IeC {\'\i } anal\IeC {\'y}zy metodiky \textit {GTD }}{14}{section.2.3}
+\contentsline {subsection}{\numberline {2.2.5}Srovn\IeC {\'a}n\IeC {\'\i } existuj\IeC {\'\i }c\IeC {\'\i }ch \IeC {\v r}e\IeC {\v s}en\IeC {\'\i }}{15}{subsection.2.2.5}
+\contentsline {section}{\numberline {2.3}Shrnut\IeC {\'\i } anal\IeC {\'y}zy metodiky \textit {GTD }}{15}{section.2.3}
 \contentsline {chapter}{\chapternumberline {3}N\IeC {\'a}vrh}{17}{chapter.3}
 \contentsline {section}{\numberline {3.1}Rozd\IeC {\v e}len\IeC {\'\i } aplikace}{17}{section.3.1}
 \contentsline {subsection}{\numberline {3.1.1}Aplikace pro centr\IeC {\'a}ln\IeC {\'\i } ulo\IeC {\v z}en\IeC {\'\i } dat}{17}{subsection.3.1.1}
 \contentsline {subsection}{\numberline {3.1.2}Mobiln\IeC {\'\i } aplikace pro Android}{18}{subsection.3.1.2}
-\contentsline {section}{\numberline {3.2}Model nasazen\IeC {\'\i }}{18}{section.3.2}
-\contentsline {section}{\numberline {3.3}Facebook a Google kalend\IeC {\'a}\IeC {\v r}}{18}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Facebook}{19}{subsection.3.3.1}
-\contentsline {subsubsection}{\numberline {3.3.1.1}Pro\IeC {\v c} Facebook}{19}{subsubsection.3.3.1.1}
-\contentsline {subsubsection}{\numberline {3.3.1.2}Odd\IeC {\v e}len\IeC {\'\i } p\IeC {\v r}ihl\IeC {\'a}\IeC {\v s}en\IeC {\'\i } od publikace}{19}{subsubsection.3.3.1.2}
-\contentsline {subsubsection}{\numberline {3.3.1.3}P\IeC {\v r}ihl\IeC {\'a}\IeC {\v s}en\IeC {\'\i }}{19}{subsubsection.3.3.1.3}
-\contentsline {subsubsection}{\numberline {3.3.1.4}Publikace}{19}{subsubsection.3.3.1.4}
-\contentsline {subsection}{\numberline {3.3.2}Google kalend\IeC {\'a}\IeC {\v r}}{19}{subsection.3.3.2}
-\contentsline {subsubsection}{\numberline {3.3.2.1}Pro\IeC {\v c} Google kalend\IeC {\'a}\IeC {\v r}}{19}{subsubsection.3.3.2.1}
-\contentsline {subsubsection}{\numberline {3.3.2.2}Odd\IeC {\v e}len\IeC {\'\i } p\IeC {\v r}ihl\IeC {\'a}\IeC {\v s}en\IeC {\'\i } od publikace}{20}{subsubsection.3.3.2.2}
-\contentsline {subsubsection}{\numberline {3.3.2.3}P\IeC {\v r}ihl\IeC {\'a}\IeC {\v s}en\IeC {\'\i }}{20}{subsubsection.3.3.2.3}
-\contentsline {subsubsection}{\numberline {3.3.2.4}Publikace}{20}{subsubsection.3.3.2.4}
-\contentsline {section}{\numberline {3.4}Technologie}{20}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Aplikace pro centr\IeC {\'a}ln\IeC {\'\i } ulo\IeC {\v z}en\IeC {\'\i } dat}{20}{subsection.3.4.1}
-\contentsline {subsubsection}{\numberline {3.4.1.1}Webov\IeC {\'a} slu\IeC {\v z}ba -- \acrshort {rest} \acrshort {api}}{20}{subsubsection.3.4.1.1}
-\contentsline {subsubsection}{\numberline {3.4.1.2}Programovac\IeC {\'\i } jazyk -- Java}{22}{subsubsection.3.4.1.2}
-\contentsline {subsubsection}{\numberline {3.4.1.3}Z\IeC {\'a}kladn\IeC {\'\i } framework -- Spring}{22}{subsubsection.3.4.1.3}
-\contentsline {subsubsection}{\numberline {3.4.1.4}Persistence dat -- Hibernate}{22}{subsubsection.3.4.1.4}
-\contentsline {subsubsection}{\numberline {3.4.1.5}Facebook -- Restfb }{23}{subsubsection.3.4.1.5}
-\contentsline {subsubsection}{\numberline {3.4.1.6}Datab\IeC {\'a}ze -- MySQL}{23}{subsubsection.3.4.1.6}
-\contentsline {subsubsection}{\numberline {3.4.1.7}Aplika\IeC {\v c}n\IeC {\'\i } server Wild Fly}{23}{subsubsection.3.4.1.7}
-\contentsline {subsubsection}{\numberline {3.4.1.8}Hosting - DigitalOcean}{23}{subsubsection.3.4.1.8}
-\contentsline {subsection}{\numberline {3.4.2}Mobiln\IeC {\'\i } aplikace pro Android}{24}{subsection.3.4.2}
-\contentsline {subsubsection}{\numberline {3.4.2.1}OS Android}{24}{subsubsection.3.4.2.1}
-\contentsline {subsubsection}{\numberline {3.4.2.2}Android-bootstrap}{25}{subsubsection.3.4.2.2}
-\contentsline {subsubsection}{\numberline {3.4.2.3}Verze SDK Android}{25}{subsubsection.3.4.2.3}
-\contentsline {subsubsection}{\numberline {3.4.2.4}Facebook SDK}{25}{subsubsection.3.4.2.4}
-\contentsline {subsubsection}{\numberline {3.4.2.5}Google play service}{26}{subsubsection.3.4.2.5}
-\contentsline {subsubsection}{\numberline {3.4.2.6}Klient pro REST API - Retrofit}{26}{subsubsection.3.4.2.6}
-\contentsline {section}{\numberline {3.5}REST API}{26}{section.3.5}
-\contentsline {section}{\numberline {3.6}Datab\IeC {\'a}zov\IeC {\'y} model}{26}{section.3.6}
+\contentsline {subsection}{\numberline {3.1.3}Model nasazen\IeC {\'\i }}{18}{subsection.3.1.3}
+\contentsline {section}{\numberline {3.2}Facebook a Google kalend\IeC {\'a}\IeC {\v r}}{18}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Facebook}{19}{subsection.3.2.1}
+\contentsline {subsubsection}{\numberline {3.2.1.1}Pro\IeC {\v c} Facebook}{19}{subsubsection.3.2.1.1}
+\contentsline {subsubsection}{\numberline {3.2.1.2}Odd\IeC {\v e}len\IeC {\'\i } p\IeC {\v r}ihl\IeC {\'a}\IeC {\v s}en\IeC {\'\i } od publikace}{19}{subsubsection.3.2.1.2}
+\contentsline {subsubsection}{\numberline {3.2.1.3}P\IeC {\v r}ihl\IeC {\'a}\IeC {\v s}en\IeC {\'\i }}{19}{subsubsection.3.2.1.3}
+\contentsline {subsubsection}{\numberline {3.2.1.4}Publikace}{19}{subsubsection.3.2.1.4}
+\contentsline {subsection}{\numberline {3.2.2}Google kalend\IeC {\'a}\IeC {\v r}}{20}{subsection.3.2.2}
+\contentsline {subsubsection}{\numberline {3.2.2.1}Pro\IeC {\v c} Google kalend\IeC {\'a}\IeC {\v r}}{20}{subsubsection.3.2.2.1}
+\contentsline {subsubsection}{\numberline {3.2.2.2}Odd\IeC {\v e}len\IeC {\'\i } p\IeC {\v r}ihl\IeC {\'a}\IeC {\v s}en\IeC {\'\i } od publikace}{20}{subsubsection.3.2.2.2}
+\contentsline {subsubsection}{\numberline {3.2.2.3}P\IeC {\v r}ihl\IeC {\'a}\IeC {\v s}en\IeC {\'\i }}{20}{subsubsection.3.2.2.3}
+\contentsline {subsubsection}{\numberline {3.2.2.4}Publikace}{20}{subsubsection.3.2.2.4}
+\contentsline {section}{\numberline {3.3}Technologie}{21}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Aplikace pro centr\IeC {\'a}ln\IeC {\'\i } ulo\IeC {\v z}en\IeC {\'\i } dat}{21}{subsection.3.3.1}
+\contentsline {subsubsection}{\numberline {3.3.1.1}Webov\IeC {\'a} slu\IeC {\v z}ba -- \acrshort {rest} \acrshort {api}}{21}{subsubsection.3.3.1.1}
+\contentsline {subsubsection}{\numberline {3.3.1.2}Programovac\IeC {\'\i } jazyk -- Java}{22}{subsubsection.3.3.1.2}
+\contentsline {subsubsection}{\numberline {3.3.1.3}Z\IeC {\'a}kladn\IeC {\'\i } framework -- Spring}{22}{subsubsection.3.3.1.3}
+\contentsline {subsubsection}{\numberline {3.3.1.4}Persistence dat -- Hibernate}{22}{subsubsection.3.3.1.4}
+\contentsline {subsubsection}{\numberline {3.3.1.5}Facebook -- Restfb}{23}{subsubsection.3.3.1.5}
+\contentsline {subsubsection}{\numberline {3.3.1.6}Datab\IeC {\'a}ze -- MySQL}{23}{subsubsection.3.3.1.6}
+\contentsline {subsubsection}{\numberline {3.3.1.7}Aplika\IeC {\v c}n\IeC {\'\i } server Wild Fly}{23}{subsubsection.3.3.1.7}
+\contentsline {subsubsection}{\numberline {3.3.1.8}Hosting -- DigitalOcean}{23}{subsubsection.3.3.1.8}
+\contentsline {subsection}{\numberline {3.3.2}Mobiln\IeC {\'\i } aplikace pro Android}{24}{subsection.3.3.2}
+\contentsline {subsubsection}{\numberline {3.3.2.1}OS Android}{24}{subsubsection.3.3.2.1}
+\contentsline {subsubsection}{\numberline {3.3.2.2}Android-bootstrap}{25}{subsubsection.3.3.2.2}
+\contentsline {subsubsection}{\numberline {3.3.2.3}Verze SDK Android}{25}{subsubsection.3.3.2.3}
+\contentsline {subsubsection}{\numberline {3.3.2.4}Facebook SDK}{25}{subsubsection.3.3.2.4}
+\contentsline {subsubsection}{\numberline {3.3.2.5}Google play service}{25}{subsubsection.3.3.2.5}
+\contentsline {subsubsection}{\numberline {3.3.2.6}Klient pro REST API - Retrofit}{26}{subsubsection.3.3.2.6}
+\contentsline {section}{\numberline {3.4}Specifikace REST API}{26}{section.3.4}
+\contentsline {section}{\numberline {3.5}Datab\IeC {\'a}zov\IeC {\'y} model}{26}{section.3.5}
 \contentsline {chapter}{\chapternumberline {4}Realizace}{29}{chapter.4}
-\contentsline {subsection}{\numberline {4.0.1}Aplikace pro centr\IeC {\'a}ln\IeC {\'\i } ulo\IeC {\v z}en\IeC {\'\i } dat}{30}{subsection.4.0.1}
-\contentsline {subsubsection}{\numberline {4.0.1.1}Struktura projektu}{30}{subsubsection.4.0.1.1}
-\contentsline {subsubsection}{\numberline {4.0.1.2}REST API}{30}{subsubsection.4.0.1.2}
-\contentsline {subsubsection}{\numberline {4.0.1.3}Datab\IeC {\'a}ze}{34}{subsubsection.4.0.1.3}
-\contentsline {subsubsection}{\numberline {4.0.1.4}Identifikace u\IeC {\v z}ivatele}{35}{subsubsection.4.0.1.4}
-\contentsline {subsubsection}{\numberline {4.0.1.5}Facebook}{38}{subsubsection.4.0.1.5}
-\contentsline {subsubsection}{\numberline {4.0.1.6}Google}{39}{subsubsection.4.0.1.6}
-\contentsline {subsection}{\numberline {4.0.2}Mobiln\IeC {\'\i } aplikace pro Android}{41}{subsection.4.0.2}
-\contentsline {subsubsection}{\numberline {4.0.2.1}Struktura projektu}{41}{subsubsection.4.0.2.1}
-\contentsline {subsubsection}{\numberline {4.0.2.2}Klient pro konzumaci REST API}{41}{subsubsection.4.0.2.2}
-\contentsline {subsubsection}{\numberline {4.0.2.3}Asynchronn\IeC {\'\i } na\IeC {\v c}\IeC {\'\i }t\IeC {\'a}n\IeC {\'\i } dat}{44}{subsubsection.4.0.2.3}
-\contentsline {subsubsection}{\numberline {4.0.2.4}Facebook}{47}{subsubsection.4.0.2.4}
-\contentsline {subsubsection}{\numberline {4.0.2.5}Google}{47}{subsubsection.4.0.2.5}
-\contentsline {section}{\numberline {4.1}Hosting}{47}{section.4.1}
-\contentsline {section}{\numberline {4.2}GitHub}{47}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}title}{47}{subsection.4.2.1}
-\contentsline {section}{\numberline {4.3}N\IeC {\'a}vrhy k rozvoji}{47}{section.4.3}
-\contentsline {chapter}{Z{\' a}v{\v e}r}{49}{chapter*.29}
-\contentsline {chapter}{Literatura}{51}{section*.32}
-\contentsline {appendix}{\chapternumberline {A}Seznam pou\IeC {\v z}it\IeC {\'y}ch zkratek}{57}{appendix.A}
-\contentsline {appendix}{\chapternumberline {B}Obsah p\IeC {\v r}ilo\IeC {\v z}en\IeC {\'e}ho CD}{59}{appendix.B}
+\contentsline {section}{\numberline {4.1}Aplikace pro centr\IeC {\'a}ln\IeC {\'\i } ulo\IeC {\v z}en\IeC {\'\i } dat}{30}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Struktura projektu}{30}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}REST API}{30}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.3}Datab\IeC {\'a}ze}{34}{subsection.4.1.3}
+\contentsline {subsection}{\numberline {4.1.4}Identifikace u\IeC {\v z}ivatele}{35}{subsection.4.1.4}
+\contentsline {subsection}{\numberline {4.1.5}Facebook}{38}{subsection.4.1.5}
+\contentsline {subsection}{\numberline {4.1.6}Google}{39}{subsection.4.1.6}
+\contentsline {section}{\numberline {4.2}Mobiln\IeC {\'\i } aplikace pro Android}{41}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Struktura projektu}{41}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Klient pro konzumaci REST API}{41}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}Asynchronn\IeC {\'\i } na\IeC {\v c}\IeC {\'\i }t\IeC {\'a}n\IeC {\'\i } dat}{44}{subsection.4.2.3}
+\contentsline {subsection}{\numberline {4.2.4}Facebook}{47}{subsection.4.2.4}
+\contentsline {subsection}{\numberline {4.2.5}Google}{50}{subsection.4.2.5}
+\contentsline {section}{\numberline {4.3}DigitalOcean - instalace}{54}{section.4.3}
+\contentsline {section}{\numberline {4.4}GitHub}{54}{section.4.4}
+\contentsline {chapter}{\chapternumberline {5}Testov\IeC {\'a}n\IeC {\'\i } aplikace}{55}{chapter.5}
+\contentsline {chapter}{\chapternumberline {6}N\IeC {\'a}vrhy k rozvoji}{57}{chapter.6}
+\contentsline {chapter}{Z{\' a}v{\v e}r}{59}{chapter*.30}
+\contentsline {chapter}{Literatura}{61}{section*.33}
+\contentsline {appendix}{\chapternumberline {A}Seznam pou\IeC {\v z}it\IeC {\'y}ch zkratek}{69}{appendix.A}
+\contentsline {appendix}{\chapternumberline {B}Obsah p\IeC {\v r}ilo\IeC {\v z}en\IeC {\'e}ho CD}{71}{appendix.B}

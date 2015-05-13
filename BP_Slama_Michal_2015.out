@@ -1,5 +1,5 @@
 \BOOKMARK [0][-]{section*.4}{Todo list}{}% 1
-\BOOKMARK [0][-]{chapter*.7}{\332vod}{}% 2
+\BOOKMARK [0][-]{chapter*.6}{\332vod}{}% 2
 \BOOKMARK [0][-]{chapter.1}{C\355l pr\341ce}{}% 3
 \BOOKMARK [0][-]{chapter.2}{Anal\375za metodiky GTD }{}% 4
 \BOOKMARK [1][-]{section.2.1}{Metodika GTD - M\355t v\235e hotovo}{chapter.2}% 5
@@ -7,16 +7,18 @@
 \BOOKMARK [1][-]{section.2.3}{Shrnut\355 anal\375zy metodiky GTD }{chapter.2}% 7
 \BOOKMARK [0][-]{chapter.3}{N\341vrh}{}% 8
 \BOOKMARK [1][-]{section.3.1}{Rozdelen\355 aplikace}{chapter.3}% 9
-\BOOKMARK [1][-]{section.3.2}{Model nasazen\355}{chapter.3}% 10
-\BOOKMARK [1][-]{section.3.3}{Facebook a Google kalend\341r}{chapter.3}% 11
-\BOOKMARK [1][-]{section.3.4}{Technologie}{chapter.3}% 12
-\BOOKMARK [1][-]{section.3.5}{REST API}{chapter.3}% 13
-\BOOKMARK [1][-]{section.3.6}{Datab\341zov\375 model}{chapter.3}% 14
-\BOOKMARK [0][-]{chapter.4}{Realizace}{}% 15
-\BOOKMARK [1][-]{section.4.1}{Hosting}{chapter.4}% 16
-\BOOKMARK [1][-]{section.4.2}{GitHub}{chapter.4}% 17
-\BOOKMARK [1][-]{section.4.3}{N\341vrhy k rozvoji}{chapter.4}% 18
-\BOOKMARK [0][-]{chapter*.29}{Z\341ver}{}% 19
-\BOOKMARK [0][-]{section*.32}{Literatura}{}% 20
-\BOOKMARK [0][-]{appendix.A}{Seznam pou\236it\375ch zkratek}{}% 21
-\BOOKMARK [0][-]{appendix.B}{Obsah prilo\236en\351ho CD}{}% 22
+\BOOKMARK [1][-]{section.3.2}{Facebook a Google kalend\341r}{chapter.3}% 10
+\BOOKMARK [1][-]{section.3.3}{Technologie}{chapter.3}% 11
+\BOOKMARK [1][-]{section.3.4}{Specifikace REST API}{chapter.3}% 12
+\BOOKMARK [1][-]{section.3.5}{Datab\341zov\375 model}{chapter.3}% 13
+\BOOKMARK [0][-]{chapter.4}{Realizace}{}% 14
+\BOOKMARK [1][-]{section.4.1}{Aplikace pro centr\341ln\355 ulo\236en\355 dat}{chapter.4}% 15
+\BOOKMARK [1][-]{section.4.2}{Mobiln\355 aplikace pro Android}{chapter.4}% 16
+\BOOKMARK [1][-]{section.4.3}{DigitalOcean - instalace}{chapter.4}% 17
+\BOOKMARK [1][-]{section.4.4}{GitHub}{chapter.4}% 18
+\BOOKMARK [0][-]{chapter.5}{Testov\341n\355 aplikace}{}% 19
+\BOOKMARK [0][-]{chapter.6}{N\341vrhy k rozvoji}{}% 20
+\BOOKMARK [0][-]{chapter*.30}{Z\341ver}{}% 21
+\BOOKMARK [0][-]{section*.33}{Literatura}{}% 22
+\BOOKMARK [0][-]{appendix.A}{Seznam pou\236it\375ch zkratek}{}% 23
+\BOOKMARK [0][-]{appendix.B}{Obsah prilo\236en\351ho CD}{}% 24

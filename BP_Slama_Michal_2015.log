@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.5.1)  12 MAY 2015 00:08
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.5.1)  13 MAY 2015 17:52
 entering extended mode
 **BP_Slama_Michal_2015.tex
 (D:\01.Skola\01.Bakalarka\04.Dokumentace_new_cvut\BP_Slama_Michal_2015.tex
@@ -1490,10 +1490,10 @@ Package caption Info: supertabular package is loaded.
 File: lstlang1.sty 2014/09/06 1.5e listings language file
 ) (D:\01.Skola\01.Bakalarka\04.Dokumentace_new_cvut\BP_Slama_Michal_2015.aux
 
-LaTeX Warning: Label `technology:facebook_sdk' multiply defined.
-
-
 LaTeX Warning: Label `realization:restapi_controller' multiply defined.
+
+
+LaTeX Warning: Label `facebook_login' multiply defined.
 
 )
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 87.
@@ -1589,7 +1589,7 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <6> on input line 87.
 
-<cvut-logo-bw.pdf, id=104, 91.34125pt x 69.25874pt>
+<cvut-logo-bw.pdf, id=112, 91.34125pt x 69.25874pt>
 File: cvut-logo-bw.pdf Graphic file (type pdf)
  <use cvut-logo-bw.pdf>
 Package pdftex.def Info: cvut-logo-bw.pdf used on input line 87.
@@ -1639,16 +1639,16 @@ LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <10.95> not available
 ] [10
 
 ]
-(D:\01.Skola\01.Bakalarka\04.Dokumentace_new_cvut\BP_Slama_Michal_2015.toc)
-[11] [12
-
-]
+(D:\01.Skola\01.Bakalarka\04.Dokumentace_new_cvut\BP_Slama_Michal_2015.toc
+[11]) [12]
 (D:\01.Skola\01.Bakalarka\04.Dokumentace_new_cvut\BP_Slama_Michal_2015.lof
 
 LaTeX Warning: Citation `doit_overviewgram' on page xiii undefined on input lin
 e 8.
 
-) [13] [14
+) [13
+
+] [14
 
 ]
 (D:\01.Skola\01.Bakalarka\04.Dokumentace_new_cvut\BP_Slama_Michal_2015.lot)
@@ -1658,9 +1658,6 @@ e 8.
 \@gls@deffile=\write9
 
 (D:\01.Skola\01.Bakalarka\04.Dokumentace_new_cvut\BP_Slama_Michal_2015.tdo)
-Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
-ine 113.
-
 [1
 
 ] [2
@@ -1671,40 +1668,40 @@ ine 113.
 
 ]
 LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <24.88> not available
-(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 144.
+(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 142.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 152--153
+Underfull \hbox (badness 10000) in paragraph at lines 150--151
 
  []
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 169--172
+Underfull \hbox (badness 10000) in paragraph at lines 167--170
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 178--181
+Underfull \hbox (badness 10000) in paragraph at lines 176--179
 
  []
 
-[8] <pictures/gtd_graph.jpg, id=306, 109.1277pt x 154.176pt>
+[8] <pictures/gtd_graph.jpg, id=320, 109.1277pt x 154.176pt>
 File: pictures/gtd_graph.jpg Graphic file (type jpg)
 
 <use pictures/gtd_graph.jpg>
-Package pdftex.def Info: pictures/gtd_graph.jpg used on input line 195.
+Package pdftex.def Info: pictures/gtd_graph.jpg used on input line 193.
 (pdftex.def)             Requested size: 369.0pt x 521.3354pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [9 <D:/01.Skola/01.Bakalarka/04.Dokumentace_new_cvut/pictures/gtd_graph.jpg>]
-Overfull \hbox (3.23965pt too wide) in paragraph at lines 231--232
+Overfull \hbox (3.23965pt too wide) in paragraph at lines 229--230
 \T1/lmr/m/n/10.95 Kritickým klí-£em k úsp¥-chu jsou pra-vi-delná zhod-no-cení v
 ²ech ak-tu-ál-ních úkol·.
  []
 
 [10]
-Overfull \hbox (4.94588pt too wide) in paragraph at lines 245--246
+Overfull \hbox (4.94588pt too wide) in paragraph at lines 243--244
 []\T1/lmr/m/n/10.95 Dal²ími moº-nými fil-try jsou \T1/lmr/m/it/10.95 do-stupný 
 £as\T1/lmr/m/n/10.95 , \T1/lmr/m/it/10.95 do-stupná ener-gie \T1/lmr/m/n/10.95 
 (jak moc sv¥ºí
@@ -1713,9 +1710,9 @@ Overfull \hbox (4.94588pt too wide) in paragraph at lines 245--246
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 259.
+(hyperref)                removing `\textasciicaron' on input line 257.
 
-<pictures/toodledo_overview.jpg, id=327, 1302.8675pt x 707.64375pt>
+<pictures/toodledo_overview.jpg, id=342, 1302.8675pt x 707.64375pt>
 File: pictures/toodledo_overview.jpg Graphic file (type jpg)
 
 <use pictures/toodledo_overview.jpg>
@@ -1723,31 +1720,31 @@ Package pdftex.def Info: pictures/toodledo_overview.jpg used on input line 277.
 
 (pdftex.def)             Requested size: 369.0pt x 200.41722pt.
  [11]
-<pictures/doit_overview.jpg, id=337, 481.8pt x 803.0pt>
+<pictures/doit_overview.jpg, id=354, 481.8pt x 803.0pt>
 File: pictures/doit_overview.jpg Graphic file (type jpg)
 
 <use pictures/doit_overview.jpg>
-Package pdftex.def Info: pictures/doit_overview.jpg used on input line 296.
+Package pdftex.def Info: pictures/doit_overview.jpg used on input line 295.
 (pdftex.def)             Requested size: 154.98047pt x 258.29887pt.
 
 
 LaTeX Warning: Citation `doit_overviewgram' on page 12 undefined on input line 
-297.
+296.
 
 
 LaTeX Warning: Citation `doit_overviewgram' on page 12 undefined on input line 
-297.
+296.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [12 <D:/01.Skola/01.Bakalarka/04.Dokumentace_new_cvut/pictures/toodledo_overvie
-w.jpg>] <pictures/wunderlist_overview.png, id=343, 134.904pt x 96.6009pt>
+w.jpg>] <pictures/wunderlist_overview.png, id=362, 134.904pt x 96.6009pt>
 File: pictures/wunderlist_overview.png Graphic file (type png)
 
 <use pictures/wunderlist_overview.png>
 Package pdftex.def Info: pictures/wunderlist_overview.png used on input line 31
-5.
+3.
 (pdftex.def)             Requested size: 360.74216pt x 258.29887pt.
 
 
@@ -1755,147 +1752,216 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [13 <D:/01.Skola/01.Bakalarka/04.Dokumentace_new_cvut/pictures/doit_overview.jp
 g>] [14 <D:/01.Skola/01.Bakalarka/04.Dokumentace_new_cvut/pictures/wunderlist_o
-verview.png (PNG copy)>] [15] [16
+verview.png (PNG copy)>]
+Overfull \hbox (3.793pt too wide) in paragraph at lines 340--340
+[]|\T1/lmr/m/n/10.95 Web/Android/iOS| 
+ []
+
+
+Overfull \hbox (5.14418pt too wide) in paragraph at lines 340--340
+[]|\T1/lmr/m/n/10.95 ano/ano/ano| 
+ []
+
+
+Overfull \hbox (5.14418pt too wide) in paragraph at lines 340--340
+[]|\T1/lmr/m/n/10.95 ano/ano/ano| 
+ []
+
+
+Overfull \hbox (5.14418pt too wide) in paragraph at lines 340--340
+[]|\T1/lmr/m/n/10.95 ano/ano/ano| 
+ []
+
+
+Overfull \hbox (5.14418pt too wide) in paragraph at lines 340--340
+[]|\T1/lmr/m/n/10.95 ano/ano/ano| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 341--341
+[]|\T1/lmr/m/n/10.95 Automatické
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 342--342
+[]|\T1/lmr/m/n/10.95 Intuitivní ovlá-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 342--342
+[]|\T1/lmr/m/n/10.95 mírn¥ ne-
+ []
+
+
+Underfull \hbox (badness 7925) in paragraph at lines 343--343
+[]|\T1/lmr/m/n/10.95 Podpora Go-o-gle
+ []
+
+
+Overfull \hbox (6.38023pt too wide) in paragraph at lines 338--346
+ [][] 
+ []
+
+[15] [16
 
 ]
 
 Package hyperref Warning: Composite letter `\textasciicaron+e'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 364.
+(hyperref)                removing `\textasciicaron' on input line 379.
 
 
 Underfull \vbox (badness 1810) has occurred while \output is active []
 
  [17]
-<pictures/gtd_deployment_model.jpg, id=376, 893.3375pt x 575.14874pt>
+<pictures/gtd_deployment_model.jpg, id=400, 893.3375pt x 575.14874pt>
 File: pictures/gtd_deployment_model.jpg Graphic file (type jpg)
 
 <use pictures/gtd_deployment_model.jpg>
 Package pdftex.def Info: pictures/gtd_deployment_model.jpg used on input line 3
-79.
+94.
 (pdftex.def)             Requested size: 369.0pt x 237.56772pt.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+r'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 386.
+(hyperref)                removing `\textasciicaron' on input line 400.
 
 
-Underfull \vbox (badness 2990) has occurred while \output is active []
+Underfull \vbox (badness 2027) has occurred while \output is active []
 
  [18 <D:/01.Skola/01.Bakalarka/04.Dokumentace_new_cvut/pictures/gtd_deployment_
 model.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 421--423
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 433--435
+
+ []
+
 
 LaTeX Warning: Reference `design_facebook_grapapi_explorer' on page 19 undefine
-d on input line 434.
+d on input line 446.
 
 
-Overfull \hbox (9.0403pt too wide) in paragraph at lines 442--443
+Overfull \hbox (9.0403pt too wide) in paragraph at lines 454--455
 \T1/lmr/m/n/10.95 Google ka-len-dá° je sou-£ástí ro-diny Go-o-gle aplikací[[]].
  Ze sta-tis-tik pro Gmail[[]]
  []
 
 [19]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <9> on input line 456.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 456.
 
-LaTeX Warning: Reference `design_google_access_token' on page 20 undefined on i
-nput line 450.
+Underfull \hbox (badness 10000) in paragraph at lines 466--468
+
+ []
 
 
-LaTeX Warning: Reference `design_google_playgroundcebook_grapapi_explorer' on p
-age 20 undefined on input line 480.
+Underfull \hbox (badness 10000) in paragraph at lines 478--480
+
+ []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 490--493
+Underfull \hbox (badness 10000) in paragraph at lines 483--484
 
  []
 
 [20]
-Underfull \hbox (badness 10000) in paragraph at lines 505--505
+Underfull \hbox (badness 10000) in paragraph at lines 503--505
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 518--518
 []|\T1/lmr/m/n/10.95 více moº-ných
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 506--506
+Underfull \hbox (badness 10000) in paragraph at lines 519--519
 []|\T1/lmr/m/n/10.95 Moºnost
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--507
+Underfull \hbox (badness 10000) in paragraph at lines 520--520
 []|\T1/lmr/m/n/10.95 Formát
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 509--509
+Underfull \hbox (badness 10000) in paragraph at lines 522--522
 []|\T1/lmr/m/n/10.95 SSL + WS-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 511--511
+Underfull \hbox (badness 10000) in paragraph at lines 524--524
 []|\T1/lmr/m/n/10.95 Rychlost
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 512--512
+Underfull \hbox (badness 10000) in paragraph at lines 525--525
 []|\T1/lmr/m/n/10.95 Jednodu²²í
  []
 
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 522.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 522.
-[21] [22]
 
-LaTeX Warning: Citation `design_restapi_restf' on page 23 undefined on input li
-ne 563.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 575--576
+Underfull \hbox (badness 10000) in paragraph at lines 532--533
 
  []
 
+[21]
+Underfull \hbox (badness 10000) in paragraph at lines 551--553
 
-Underfull \hbox (badness 10000) in paragraph at lines 577--578
+ []
+
+[22]
+Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
+ine 582.
+
+Underfull \hbox (badness 10000) in paragraph at lines 589--590
 
  []
 
 [23]
-Overfull \hbox (1.48868pt too wide) in paragraph at lines 594--595
+Overfull \hbox (1.48868pt too wide) in paragraph at lines 606--607
 []\T1/lmr/m/n/10.95 DigitalOcean po-sky-tuje tzv. dro-plet. Fun-guje jako vir-t
 u-ální ser-ver a správce
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 612--613
+Underfull \hbox (badness 10000) in paragraph at lines 624--625
 
  []
 
 [24]
-Underfull \hbox (badness 10000) in paragraph at lines 625--626
+Underfull \hbox (badness 10000) in paragraph at lines 637--638
 
  []
 
 
-Overfull \hbox (2.65709pt too wide) in paragraph at lines 646--647
+Overfull \hbox (2.65709pt too wide) in paragraph at lines 658--659
 []\T1/lmr/m/n/10.95 Auto°i An-dro-idu do-po-ru-£ují vol-bou [][]SDK[] po-krýt 9
 0% ak-tiv-ních za°ízení[[]].
  []
 
 
-Overfull \hbox (296.63045pt too wide) in paragraph at lines 654--656
+Overfull \hbox (296.63045pt too wide) in paragraph at lines 666--668
 []\T1/lmr/m/n/10.95 Verze SDK a p°í-slu²né verze apli-kace Fa-ce-book lze stáh-
 nout na href''https://developers.facebook.com/docs/android/downloads''Facebook
  []
 
 [25]
-Underfull \hbox (badness 10000) in paragraph at lines 724--725
+Underfull \hbox (badness 10000) in paragraph at lines 736--737
 
  []
 
-<pictures/gtd_raml_anypoint.png, id=598, 1014.79124pt x 438.8897pt>
+<pictures/gtd_raml_anypoint.png, id=648, 1014.79124pt x 438.8897pt>
 File: pictures/gtd_raml_anypoint.png Graphic file (type png)
 
 <use pictures/gtd_raml_anypoint.png>
-Package pdftex.def Info: pictures/gtd_raml_anypoint.png used on input line 733.
+Package pdftex.def Info: pictures/gtd_raml_anypoint.png used on input line 745.
 
 (pdftex.def)             Requested size: 369.0pt x 159.58733pt.
 
@@ -1906,16 +1972,18 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 ml_anypoint.png>] [29
 
 ]
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 775.
 
+LaTeX Warning: Marginpar on page 30 moved by 0.39275pt.
+
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 789.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\t1lmtt.fd"
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 791.
+nput line 805.
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 791--791
+Overfull \hbox (6.0pt too wide) in paragraph at lines 805--805
 [][][][][][][] 
  []
 
@@ -1924,7 +1992,7 @@ Overfull \hbox (6.0pt too wide) in paragraph at lines 791--791
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [31]
-Overfull \hbox (6.0pt too wide) in paragraph at lines 797--797
+Overfull \hbox (6.0pt too wide) in paragraph at lines 811--811
 [][][][][][][] 
  []
 
@@ -1935,33 +2003,33 @@ Overfull \hbox (33.56299pt too wide) in paragraph at lines 43--44
  []
 
 )
-Overfull \hbox (6.0pt too wide) in paragraph at lines 803--803
+Overfull \hbox (6.0pt too wide) in paragraph at lines 817--817
 [][][][][][][] 
  []
 
 (D:\01.Skola\01.Bakalarka\04.Dokumentace_new_cvut\codes/dao_person.java
 [33])
-Overfull \hbox (6.0pt too wide) in paragraph at lines 809--809
+Overfull \hbox (6.0pt too wide) in paragraph at lines 823--823
 [][][][][][][] 
  []
 
 (D:\01.Skola\01.Bakalarka\04.Dokumentace_new_cvut\codes/hibernate_person.java
 [34])
-<pictures/gtd_entity_relationship_diagram.jpg, id=844, 1680.2775pt x 1370.11874
+<pictures/gtd_entity_relationship_diagram.jpg, id=892, 1680.2775pt x 1370.11874
 pt>
 File: pictures/gtd_entity_relationship_diagram.jpg Graphic file (type jpg)
  <use pictures/gtd_entity_relationship_diagram.jpg>
 Package pdftex.def Info: pictures/gtd_entity_relationship_diagram.jpg used on i
-nput line 816.
+nput line 830.
 (pdftex.def)             Requested size: 529.4697pt x 431.72932pt.
-
-Overfull \hbox (6.0pt too wide) in paragraph at lines 834--834
+ [35] [36 <D:/01.Skola/01.Bakalarka/04.Dokumentace_new_cvut/pictures/gtd_entity
+_relationship_diagram.jpg>]
+Overfull \hbox (6.0pt too wide) in paragraph at lines 848--848
 [][][][][][][] 
  []
 
-[35] [36 <D:/01.Skola/01.Bakalarka/04.Dokumentace_new_cvut/pictures/gtd_entity_
-relationship_diagram.jpg>]
-Overfull \hbox (6.0pt too wide) in paragraph at lines 841--841
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 855--855
 [][][][][][][] 
  []
 
@@ -1976,13 +2044,13 @@ Overfull \hbox (5.21277pt too wide) in paragraph at lines 28--29
  []
 
 [37])
-Overfull \hbox (6.0pt too wide) in paragraph at lines 864--864
+Overfull \hbox (6.0pt too wide) in paragraph at lines 878--878
 [][][][][][][] 
  []
 
 (D:\01.Skola\01.Bakalarka\04.Dokumentace_new_cvut\codes/facebook_publish.java
 [38]) [39]
-Overfull \hbox (6.0pt too wide) in paragraph at lines 888--888
+Overfull \hbox (6.0pt too wide) in paragraph at lines 902--902
 [][][][][][][] 
  []
 
@@ -1990,90 +2058,208 @@ Overfull \hbox (6.0pt too wide) in paragraph at lines 888--888
 [40])
 
 LaTeX Warning: Reference `retrofit_configuration' on page 41 undefined on input
- line 919.
+ line 934.
 
-
-Overfull \hbox (6.0pt too wide) in paragraph at lines 928--928
+[41]
+Overfull \hbox (6.0pt too wide) in paragraph at lines 943--943
 [][][][][][][] 
  []
 
-[41]
+
 (D:\01.Skola\01.Bakalarka\04.Dokumentace_new_cvut\codes/retrofit_configuration.
 java
 Overfull \hbox (5.21277pt too wide) in paragraph at lines 27--28
 [][][][][][] 
  []
 
-)
-Overfull \hbox (6.0pt too wide) in paragraph at lines 932--932
+) [42]
+Overfull \hbox (6.0pt too wide) in paragraph at lines 947--947
 [][][][][][][] 
  []
 
-[42]
+
 (D:\01.Skola\01.Bakalarka\04.Dokumentace_new_cvut\codes/retrofit_interface.java
 )
-Overfull \hbox (6.0pt too wide) in paragraph at lines 936--936
+Overfull \hbox (6.0pt too wide) in paragraph at lines 951--951
 [][][][][][][] 
  []
 
 
 (D:\01.Skola\01.Bakalarka\04.Dokumentace_new_cvut\codes/retrofit_bootstrap_serv
 ice.java [43])
-Overfull \hbox (6.0pt too wide) in paragraph at lines 938--938
+Overfull \hbox (6.0pt too wide) in paragraph at lines 953--953
 [][][][][][][] 
  []
 
 (D:\01.Skola\01.Bakalarka\04.Dokumentace_new_cvut\codes/retrofit_example.java)
+[44]
 
-LaTeX Warning: Reference `Klient pro konzumaci REST API' on page 44 undefined o
-n input line 954.
+LaTeX Warning: Reference `Klient pro konzumaci REST API' on page 45 undefined o
+n input line 969.
 
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 956--956
+Overfull \hbox (6.0pt too wide) in paragraph at lines 971--971
 [][][][][][][] 
  []
 
-[44]
+
 (D:\01.Skola\01.Bakalarka\04.Dokumentace_new_cvut\codes/android_asyncTasks.java
+[45]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [46])
+Overfull \hbox (6.0pt too wide) in paragraph at lines 978--978
+[][][][][][][] 
+ []
+
+<pictures/facebook_app_registration.png, id=1351, 703.87968pt x 414.79968pt>
+File: pictures/facebook_app_registration.png Graphic file (type png)
+
+<use pictures/facebook_app_registration.png>
+Package pdftex.def Info: pictures/facebook_app_registration.png used on input l
+ine 983.
+(pdftex.def)             Requested size: 369.0pt x 217.4503pt.
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 990--990
+[][][][][][][] 
+ []
+
+(D:\01.Skola\01.Bakalarka\04.Dokumentace_new_cvut\codes/facebook_manifest.xml
+[47 <D:/01.Skola/01.Bakalarka/04.Dokumentace_new_cvut/pictures/facebook_app_reg
+istration.png>]
+Overfull \hbox (5.21277pt too wide) in paragraph at lines 24--25
+[][][][][][][][][][][][][][][]  
+ []
+
+
+Overfull \hbox (5.21277pt too wide) in paragraph at lines 25--26
+[][][][][][][][][][][][][][][][][][]  
+ []
+
+
+Overfull \hbox (10.88281pt too wide) in paragraph at lines 29--30
+[][][][][][][][][][][][][]  
+ []
+
+)
+Overfull \hbox (6.0pt too wide) in paragraph at lines 993--993
+[][][][][][][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 997--998
+
+ []
+
+[48]
+Overfull \hbox (16.91136pt too wide) in paragraph at lines 1004--1005
+[]\T1/lmr/m/it/10.95 uloºení ac-cess to-kenu \T1/lmr/m/n/10.95 -- ac-cess to-ke
+n uklá-dáme do tzv. sha-red preferences[[]]. 
+ []
+
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 1007--1007
+[][][][][][][] 
+ []
+
+(D:\01.Skola\01.Bakalarka\04.Dokumentace_new_cvut\codes/facebook_login.java
+Overfull \hbox (5.21277pt too wide) in paragraph at lines 14--15
+[][][][][][][][][][][][][][][]  
+ []
+
+
+Overfull \hbox (10.88281pt too wide) in paragraph at lines 15--16
+[][][][][][][][][][][][][]  
+ []
+
+
+Underfull \vbox (badness 1596) has occurred while \output is active []
+
+ [49])
+File: pictures/facebook_app_registration.png Graphic file (type png)
+
+<use pictures/facebook_app_registration.png>
+Package pdftex.def Info: pictures/facebook_app_registration.png used on input l
+ine 1019.
+(pdftex.def)             Requested size: 369.0pt x 217.4503pt.
+
+
+LaTeX Warning: Citation `google_manifest_version' on page 50 undefined on input
+ line 1024.
+
+
+LaTeX Warning: Reference `google_manifest_rights' on page 50 undefined on input
+ line 1024.
+
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 1026--1026
+[][][][][][][] 
+ []
+
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 1030--1030
+[][][][][][][] 
+ []
+
+[50]
+Underfull \hbox (badness 10000) in paragraph at lines 1037--1038
+
+ []
+
+
+Overfull \hbox (171.63622pt too wide) in paragraph at lines 1041--1042
+[]\T1/lmr/m/it/10.95 p°ihlá²ení uºi-va-tele k jeho go-o-gle ú£tu \T1/lmr/m/n/10
+.95 -- za-ji²-´uje kom-po-nenta \T1/lmr/m/it/10.95 com.google.android.gms.commo
+n.SignInButton\T1/lmr/m/n/10.95 . 
+ []
+
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 1047--1047
+[][][][][][][] 
+ []
+
+(D:\01.Skola\01.Bakalarka\04.Dokumentace_new_cvut\codes/google_login.java
+[51]
+Overfull \hbox (2.5326pt too wide) in paragraph at lines 57--58
+[][][][][][][][][][]  
+ []
+
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [45])
+ [52])
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [46]
-Overfull \hbox (60.7208pt too wide) in paragraph at lines 987--987
-\T1/lmr/m/n/10.95 d:01.Skola01.Bakalarka30.Vyvoj 
+ [53]
+Underfull \hbox (badness 10000) in paragraph at lines 1077--1078
+
  []
 
+[54] <pictures/sopaui.png, id=1658, 984.67876pt x 549.55313pt>
+File: pictures/sopaui.png Graphic file (type png)
 
-Overfull \hbox (60.7208pt too wide) in paragraph at lines 987--987
-\T1/lmr/m/n/10.95 d:01.Skola01.Bakalarka30.Vyvoj 
+<use pictures/sopaui.png>
+Package pdftex.def Info: pictures/sopaui.png used on input line 1088.
+(pdftex.def)             Requested size: 369.0pt x 205.93936pt.
+ [55
+
+ <D:/01.Skola/01.Bakalarka/04.Dokumentace_new_cvut/pictures/sopaui.png>] [56
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 1096--1097
+
  []
 
-
-Overfull \hbox (60.7208pt too wide) in paragraph at lines 987--987
-\T1/lmr/m/n/10.95 d:01.Skola01.Bakalarka30.Vyvoj 
- []
-
-
-Overfull \hbox (60.7208pt too wide) in paragraph at lines 987--987
-\T1/lmr/m/n/10.95 d:01.Skola01.Bakalarka30.Vyvoj 
- []
-
-
-LaTeX Warning: Marginpar on page 47 moved by 9.11551pt.
-
-[47] [48
+[57] [58
 
 ]
 
 Package hyperref Warning: Composite letter `\textasciicaron+e'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 1007.
+(hyperref)                removing `\textasciicaron' on input line 1106.
 
-[49] (D:\01.Skola\01.Bakalarka\04.Dokumentace_new_cvut\BP_Slama_Michal_2015.bbl
-[50]
+[59] (D:\01.Skola\01.Bakalarka\04.Dokumentace_new_cvut\BP_Slama_Michal_2015.bbl
+[60]
 bibitemlist
 
 Underfull \hbox (badness 1087) in paragraph at lines 22--24
@@ -2083,170 +2269,313 @@ lmm/m/it/10.95 :\T1/lmtt/m/n/10.95 com / 2012 / 04 / 06 / toodledo -[] weird -[
  []
 
 
-Underfull \hbox (badness 1205) in paragraph at lines 31--33
+Underfull \hbox (badness 10000) in paragraph at lines 39--41
+[]\T1/lmr/m/n/10.95 Wunderlist. [on-line], 2015, [cit. 2015-05-11]. Do-stupné z
+:
+ []
+
+
+Underfull \hbox (badness 1205) in paragraph at lines 47--49
 []\T1/lmr/m/n/10.95 Thin cli-ent. [on-line], 2015, [cit. 2015-04-29]. Do-stupné
  z: []$\T1/lmtt/m/n/10.95 http : / /$
  []
 
 
-Underfull \hbox (badness 2142) in paragraph at lines 35--37
+Underfull \hbox (badness 2142) in paragraph at lines 51--53
 []\T1/lmr/m/n/10.95 Facebook. [on-line], 2015, [cit. 2015-05-05]. Do-stupné z: 
 []$\T1/lmtt/m/n/10.95 https : / /$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 39--41
+Underfull \hbox (badness 10000) in paragraph at lines 55--57
 \T1/lmr/m/n/10.95 z: []$\T1/lmtt/m/n/10.95 http : / / www\OML/lmm/m/it/10.95 :\
 T1/lmtt/m/n/10.95 statista\OML/lmm/m/it/10.95 :\T1/lmtt/m/n/10.95 com / statist
 ics / 272014 / global -[] social -[]$
  []
 
-[51
+[61
 
 ]
-Underfull \hbox (badness 1314) in paragraph at lines 60--62
+Underfull \hbox (badness 1314) in paragraph at lines 76--78
 []\T1/lmr/m/n/10.95 Facebook Lo-gin for An-droid. [on-line], 2015, [cit. 2015-0
 5-10]. Do-
  []
 
 
-Underfull \hbox (badness 1466) in paragraph at lines 76--79
+Underfull \hbox (badness 1466) in paragraph at lines 97--100
 []\T1/lmr/m/n/10.95 Start in-te-gra-ting Go-o-gle Sign-In into your An-droid ap
 p. [on-line],
  []
 
 
-Underfull \hbox (badness 3884) in paragraph at lines 90--93
+Underfull \hbox (badness 3884) in paragraph at lines 115--118
 []\T1/lmr/m/n/10.95 Dhingra, S.: REST vs. SOAP: How to cho-ose the best Web
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 90--93
+Underfull \hbox (badness 10000) in paragraph at lines 115--118
 \T1/lmr/m/n/10.95 ser-vice. [on-line], 2013, [cit. 2015-05-05]. Do-stupné z: []
 $\T1/lmtt/m/n/10.95 http :$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 90--93
+Underfull \hbox (badness 10000) in paragraph at lines 115--118
 $\T1/lmtt/m/n/10.95 / / searchsoa\OML/lmm/m/it/10.95 :\T1/lmtt/m/n/10.95 techta
 rget\OML/lmm/m/it/10.95 :\T1/lmtt/m/n/10.95 com / tip / REST -[] vs -[] SOAP -[
 ] How -[] to -[] choose -[]$
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 100--102
+[62]
+Underfull \hbox (badness 10000) in paragraph at lines 125--127
 \T1/lmr/m/n/10.95 z: []$\T1/lmtt/m/n/10.95 http : / / www\OML/lmm/m/it/10.95 :\
 T1/lmtt/m/n/10.95 soapui\OML/lmm/m/it/10.95 :\T1/lmtt/m/n/10.95 org / testing -
 [] dojo / world -[] of -[] api -[] testing /$
  []
 
-[52]
-Underfull \hbox (badness 1308) in paragraph at lines 169--171
+[63]
+Underfull \hbox (badness 6412) in paragraph at lines 186--189
+[]\T1/lmr/m/n/10.95 How to use exis-ting Oracle sequence to ge-ne-rate id in hi
+-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 186--189
+\T1/lmr/m/n/10.95 ber-nate? [on-line], 2010, [cit. 2015-05-11]. Do-stupné z: []
+$\T1/lmtt/m/n/10.95 http :$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 186--189
+$\T1/lmtt/m/n/10.95 / / stackoverflow\OML/lmm/m/it/10.95 :\T1/lmtt/m/n/10.95 co
+m / questions / 2155376 / how -[] to -[] use -[] existing -[]$
+ []
+
+
+Underfull \hbox (badness 3148) in paragraph at lines 195--197
+[]\T1/lmr/m/n/10.95 MySQL ver-sus Oracle Fe-a-tu-re-s/-Functi-o-na-lity. [on-li
+ne], 2008, [cit.
+ []
+
+
+Underfull \hbox (badness 1308) in paragraph at lines 221--223
 []\T1/lmr/m/n/10.95 Dashboards. [on-line], 2015, [cit. 2015-04-29]. Do-stupné z
 : []$\T1/lmtt/m/n/10.95 http : / /$
  []
 
 
-Underfull \hbox (badness 2961) in paragraph at lines 181--183
+Underfull \hbox (badness 2961) in paragraph at lines 233--235
 \T1/lmr/m/n/10.95 stupné z: []$\T1/lmtt/m/n/10.95 https : / / developer\OML/lmm
 /m/it/10.95 :\T1/lmtt/m/n/10.95 android\OML/lmm/m/it/10.95 :\T1/lmtt/m/n/10.95 
 com / google / play -[] services /$
  []
 
-[53]
-Underfull \hbox (badness 5563) in paragraph at lines 185--187
+
+Underfull \hbox (badness 5563) in paragraph at lines 237--239
 []\T1/lmr/m/n/10.95 Retrofit. [on-line], 2015, [cit. 2015-05-10]. Do-stupné z: 
 []$\T1/lmtt/m/n/10.95 http : / /$
  []
 
-
-Underfull \hbox (badness 3108) in paragraph at lines 189--191
+[64]
+Underfull \hbox (badness 3108) in paragraph at lines 241--243
 []\T1/lmr/m/n/10.95 TAG, L.: Re-tro-fit. [on-line], 2013, [cit. 2015-05-10]. Do
 -stupné z:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 189--191
+Underfull \hbox (badness 10000) in paragraph at lines 241--243
 []$\T1/lmtt/m/n/10.95 http : / / stackoverflow\OML/lmm/m/it/10.95 :\T1/lmtt/m/n
 /10.95 com / questions / 16902716 / comparison -[] of -[]$
  []
 
 
-Underfull \hbox (badness 2027) in paragraph at lines 193--196
+Underfull \hbox (badness 2027) in paragraph at lines 245--248
 []\T1/lmr/m/n/10.95 RAML: DDD (Delight-Driven De-ve-lo-p-ment) For APIs, Uri Sa
 -rid
  []
 
 
-Underfull \hbox (badness 2334) in paragraph at lines 193--196
+Underfull \hbox (badness 2334) in paragraph at lines 245--248
 \T1/lmr/m/n/10.95 20140716. [on-line], 2014, [cit. 2015-05-05]. Do-stupné z: []
 $\T1/lmtt/m/n/10.95 https : / /$
  []
 
 
-Underfull \hbox (badness 2409) in paragraph at lines 198--200
+Underfull \hbox (badness 2409) in paragraph at lines 250--252
 []\T1/lmr/m/n/10.95 Hibernate An-no-tati-ons. [on-line], 2010, [cit. 2015-05-05
 ]. Do-stupné
  []
 
 
-Underfull \hbox (badness 3657) in paragraph at lines 215--217
+Underfull \hbox (badness 3657) in paragraph at lines 267--269
 []\T1/lmr/m/n/10.95 Directory Structure of an An-droid Pro-ject. [on-line], 201
 5, [cit.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 219--221
+Underfull \hbox (badness 10000) in paragraph at lines 271--273
 []\T1/lmr/m/n/10.95 App Ma-ni-fest. [on-line], 2015, [cit. 2015-05-10]. Do-stup
 né z:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 219--221
+Underfull \hbox (badness 10000) in paragraph at lines 271--273
 []$\T1/lmtt/m/n/10.95 http : / / developer\OML/lmm/m/it/10.95 :\T1/lmtt/m/n/10.
 95 android\OML/lmm/m/it/10.95 :\T1/lmtt/m/n/10.95 com / guide / topics / manife
 st / manifest -[]$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 231--233
+Underfull \hbox (badness 10000) in paragraph at lines 283--285
 []$\T1/lmtt/m/n/10.95 http : / / developer\OML/lmm/m/it/10.95 :\T1/lmtt/m/n/10.
 95 android\OML/lmm/m/it/10.95 :\T1/lmtt/m/n/10.95 com / guide / components / pr
 ocesses -[] and -[]$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 235--237
+Underfull \hbox (badness 10000) in paragraph at lines 287--289
 []\T1/lmr/m/n/10.95 Otto. [on-line], 2015, [cit. 2015-05-11]. Do-stupné z: []$\
 T1/lmtt/m/n/10.95 http :$
  []
 
-[54]) [55] [56
+
+Underfull \hbox (badness 4660) in paragraph at lines 291--293
+[]\T1/lmr/m/n/10.95 Starting an Acti-vity. [on-line], 2015, [cit. 2015-05-11]. 
+Do-stupné
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 291--293
+\T1/lmr/m/n/10.95 z: []$\T1/lmtt/m/n/10.95 http : / / developer\OML/lmm/m/it/10
+.95 :\T1/lmtt/m/n/10.95 android\OML/lmm/m/it/10.95 :\T1/lmtt/m/n/10.95 com / tr
+aining / basics / activity -[]$
+ []
+
+
+Underfull \hbox (badness 4048) in paragraph at lines 295--297
+[]\T1/lmr/m/n/10.95 Signing Your Ap-pli-cati-ons. [on-line], 2015, [cit. 2015-0
+5-11]. Do-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 295--297
+\T1/lmr/m/n/10.95 stupné z: []$\T1/lmtt/m/n/10.95 http : / / developer\OML/lmm/
+m/it/10.95 :\T1/lmtt/m/n/10.95 android\OML/lmm/m/it/10.95 :\T1/lmtt/m/n/10.95 c
+om / tools / publishing / app -[]$
+ []
+
+[65]
+Underfull \hbox (badness 6047) in paragraph at lines 303--305
+[]\T1/lmr/m/n/10.95 SharedPreferences. [on-line], 2015, [cit. 2015-05-11]. Do-s
+tupné z:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 303--305
+[]$\T1/lmtt/m/n/10.95 http : / / developer\OML/lmm/m/it/10.95 :\T1/lmtt/m/n/10.
+95 android\OML/lmm/m/it/10.95 :\T1/lmtt/m/n/10.95 com / reference / android / c
+ontent /$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 307--309
+[]\T1/lmr/m/n/10.95 Android Quickstart. [on-line], 2015, [cit. 2015-05-11]. Do-
+stupné
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 307--309
+\T1/lmr/m/n/10.95 z: []$\T1/lmtt/m/n/10.95 https : / / developers\OML/lmm/m/it/
+10.95 :\T1/lmtt/m/n/10.95 google\OML/lmm/m/it/10.95 :\T1/lmtt/m/n/10.95 com / g
+oogle -[] apps / calendar /$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 320--323
+[]\T1/lmr/m/n/10.95 Sverdlov, E.: How To Cre-ate Your First Di-gi-ta-lO-cean Dr
+o-
+ []
+
+
+Underfull \hbox (badness 2080) in paragraph at lines 320--323
+\T1/lmr/m/n/10.95 plet Vir-tual Ser-ver. [on-line], 2012, [cit. 2015-05-11]. Do
+-stupné z:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 320--323
+[]$\T1/lmtt/m/n/10.95 https : / / www\OML/lmm/m/it/10.95 :\T1/lmtt/m/n/10.95 di
+gitalocean\OML/lmm/m/it/10.95 :\T1/lmtt/m/n/10.95 com / community / tutorials /
+ how -[] to -[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 325--328
+$\T1/lmtt/m/n/10.95 community / tutorials / how -[] to -[] install -[] java -[]
+ on -[] ubuntu -[] with -[] apt -[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 334--337
+[]\T1/lmr/m/n/10.95 Sverdlov, E.: How To In-stall and Secure ph-pMyAd-min on
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 334--337
+\T1/lmr/m/n/10.95 Ubuntu 12.04. [on-line], 2012, [cit. 2015-05-11]. Do-stupné z
+:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 334--337
+[]$\T1/lmtt/m/n/10.95 https : / / www\OML/lmm/m/it/10.95 :\T1/lmtt/m/n/10.95 di
+gitalocean\OML/lmm/m/it/10.95 :\T1/lmtt/m/n/10.95 com / community / tutorials /
+ how -[] to -[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 339--342
+$\T1/lmtt/m/n/10.95 articles / adding -[] an -[] existing -[] project -[] to -[
+] github -[] using -[] the -[]$
+ []
+
+[66]
+Underfull \hbox (badness 5161) in paragraph at lines 348--350
+[]\T1/lmr/m/n/10.95 HTML5. [on-line], 2015, [cit. 2015-05-11]. Do-stupné z: []$
+\T1/lmtt/m/n/10.95 http : / /$
+ []
+
+
+Underfull \hbox (badness 7099) in paragraph at lines 352--354
+[]\T1/lmr/m/n/10.95 Sencha. [on-line], 2015, [cit. 2015-05-11]. Do-stupné z: []
+$\T1/lmtt/m/n/10.95 http : / /$
+ []
+
+) [67] [68
 
 ]
 No file BP_Slama_Michal_2015.gls.
 No file BP_Slama_Michal_2015.acr.
-[57] [58
+[69] [70
 
 ]
 
 Package hyperref Warning: Composite letter `\textasciicaron+r'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 1054.
+(hyperref)                removing `\textasciicaron' on input line 1149.
 
-[59]
+[71]
 \tf@toc=\write10
 \tf@lof=\write11
 \tf@lot=\write12
 \tf@tdo=\write13
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1071.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1071.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1166.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1166.
  (D:\01.Skola\01.Bakalarka\04.Dokumentace_new_cvut\BP_Slama_Michal_2015.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1071.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1071.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1166.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1166.
 
 Package rerunfilecheck Info: File `BP_Slama_Michal_2015.out' has not changed.
-(rerunfilecheck)             Checksum: EA5FB37C31AC90FD5CF98BF91E8959E6;1325.
+(rerunfilecheck)             Checksum: 39BC28D402529E85597ABFA82A1B8F0F;1512.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -2257,18 +2586,33 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1071.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1166.
  ) 
 Here is how much of TeX's memory you used:
- 29166 strings out of 493921
- 506856 string characters out of 3144865
- 717644 words of memory out of 3000000
- 31069 multiletter control sequences out of 15000+200000
+ 29518 strings out of 493921
+ 513307 string characters out of 3144865
+ 715862 words of memory out of 3000000
+ 31135 multiletter control sequences out of 15000+200000
  89349 words of font info for 56 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 68i,13n,92p,1895b,1869s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{glo:sdk} has been referenced but does not exist, 
-replaced by a fixed one
+ 68i,15n,92p,1895b,1883s stack positions out of 5000i,500n,10000p,200000b,50000s
+pdfTeX warning (dest): name{Hfootnote.23} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.22} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.21} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.20} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.18} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{glo:sdk} has been referenced but does not exist, re
+placed by a fixed one
 
 pdfTeX warning (dest): name{glo:orm} has been referenced but does not exist, re
 placed by a fixed one
@@ -2297,6 +2641,9 @@ placed by a fixed one
 pdfTeX warning (dest): name{glo:ws} has been referenced but does not exist, rep
 laced by a fixed one
 
+pdfTeX warning (dest): name{glo:sp2} has been referenced but does not exist, re
+placed by a fixed one
+
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Program
  Files (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files (x86)/Mi
 KTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}<C:/Program Files (x86)/MiKTeX 2.9/fo
@@ -2314,9 +2661,9 @@ es (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.pfb><C:/Program Files (x86)/
 MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/
 fonts/type1/public/lm/lmtt10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1
 /public/lm/lmtt9.pfb>
-Output written on BP_Slama_Michal_2015.pdf (75 pages, 1737309 bytes).
+Output written on BP_Slama_Michal_2015.pdf (87 pages, 1966699 bytes).
 PDF statistics:
- 1679 PDF objects out of 1728 (max. 8388607)
- 816 named destinations out of 1000 (max. 500000)
- 229 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2168 PDF objects out of 2487 (max. 8388607)
+ 1090 named destinations out of 1200 (max. 500000)
+ 255 words of extra memory for PDF output out of 10000 (max. 10000000)
 

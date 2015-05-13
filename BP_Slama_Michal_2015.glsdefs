@@ -538,3 +538,33 @@ parent={},%
 %
 }%
 }%
+\ifglsentryexists{sp2}{}%
+{%
+\gls@defglossaryentry{sp2}%
+{%
+name={SP2},%
+sort={SP2},%
+type={acronym},%
+first={Software project 2\glsspace (SP2)},%
+firstplural={Software project 2s\glsspace (SP2s)},%
+text={SP2},%
+plural={SP2s},%
+description={Software project 2},%
+descriptionplural={Software project 2\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Software project 2},%
+longplural={Software project 2s},%
+short={SP2},%
+shortplural={SP2s},%
+counter={page},%
+parent={},%
+%
+}%
+}%

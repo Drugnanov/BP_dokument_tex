@@ -1,13 +1,17 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: BP_Slama_Michal_2015.aux
 The style file: csn690.bst
 Database file #1: mybibliographyfile.bib
-Repeated entry---line 403 of file mybibliographyfile.bib
- : @misc{design_google_access_token
- :                                 ,
+Repeated entry---line 419 of file mybibliographyfile.bib
+ : @misc{design_google_playground
+ :                               ,
 I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for "doit_overviewgram"
-Warning--I didn't find a database entry for "design_restapi_restf"
+Warning--I didn't find a database entry for "google_manifest_version"
 Warning--to sort, need author or key in toodledo_overview
+Warning--to sort, need author or key in gtd_existing_compare_toodledo
+Warning--to sort, need author or key in gtd_existing_compare_doit
+Warning--to sort, need author or key in gtd_existing_compare_wunderlist
+Warning--to sort, need author or key in gtd_existing_compare_todolist
 Warning--to sort, need author or key in gtd_thin_client
 Warning--to sort, need author or key in design_facebook
 Warning--to sort, need author or key in design_facebook_usage
@@ -17,10 +21,12 @@ Warning--to sort, need author or key in design_facebook_developer
 Warning--to sort, need author or key in design_facebook_android_login
 Warning--to sort, need author or key in design_google_apps
 Warning--to sort, need author or key in design_google_usage
+Warning--to sort, need author or key in design_google_access_token_guilde
 Warning--to sort, need author or key in design_google_console
 Warning--to sort, need author or key in design_google_registration
 Warning--to sort, need author or key in design_google_signin_googleplus
 Warning--to sort, need author or key in design_google_access_token
+Warning--to sort, need author or key in design_google_playground
 Warning--to sort, need author or key in ws_compare_soapui
 Warning--to sort, need author or key in ws_soap_wsdl
 Warning--to sort, need author or key in ws_wadl
@@ -30,6 +36,10 @@ Warning--to sort, need author or key in ws_comparison
 Warning--to sort, need author or key in ws_crud
 Warning--to sort, need author or key in ws_raml_wiki
 Warning--to sort, need author or key in ws_raml_mulesoft
+Warning--to sort, need author or key in technology_spring_boot
+Warning--to sort, need author or key in technology_hibernate
+Warning--to sort, need author or key in technology_hibernate_sequence
+Warning--to sort, need author or key in technology_mysql_vs_oracle
 Warning--to sort, need author or key in wildfly
 Warning--to sort, need author or key in android_market
 Warning--to sort, need author or key in android_sdk_recommendation
@@ -48,4 +58,14 @@ Warning--to sort, need author or key in realization_androi_manifest
 Warning--to sort, need author or key in http_statuses
 Warning--to sort, need author or key in android_threads
 Warning--to sort, need author or key in android_otto
+Warning--to sort, need author or key in android_launcher_activity
+Warning--to sort, need author or key in android_signing
+Warning--to sort, need author or key in android_facebook_manifest
+Warning--to sort, need author or key in android_shared_prefereces
+Warning--to sort, need author or key in android_google_guide
+Warning--to sort, need author or key in android_google_incremental_scopes
+Warning--to sort, need author or key in github_guide
+Warning--to sort, need author or key in testing_soapui
+Warning--to sort, need author or key in todo_html5
+Warning--to sort, need author or key in todo_sencha
 (There was 1 error message)

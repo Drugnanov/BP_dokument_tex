@@ -3,11 +3,15 @@
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}
+\contentsline {table}{\numberline {2.1}{\ignorespaces Porovn\IeC {\'a}n\IeC {\'\i } existuj\IeC {\'\i }c\IeC {\'\i }ch implementac\IeC {\'\i } metodiky \textit {GTD} - (* zna\IeC {\v c}\IeC {\'\i } placenou verzi)\relax }}{15}{table.caption.11}
 \addvspace {10pt}
-\contentsline {table}{\numberline {3.1}{\ignorespaces Rozd\IeC {\'\i }ly mezi SOAP a REST\relax }}{21}{table.caption.14}
-\contentsline {table}{\numberline {3.2}{\ignorespaces Funkce HTTP method\relax }}{26}{table.caption.17}
-\contentsline {table}{\numberline {3.3}{\ignorespaces Rozhran\IeC {\'\i } REST API p\IeC {\v r}\IeC {\'\i }stupn\IeC {\'e} s tokenem\relax }}{27}{table.caption.18}
-\contentsline {table}{\numberline {3.4}{\ignorespaces Rozhran\IeC {\'\i } REST API p\IeC {\v r}\IeC {\'\i }stupn\IeC {\'e} bez tokenu\relax }}{27}{table.caption.19}
+\contentsline {table}{\numberline {3.1}{\ignorespaces Rozd\IeC {\'\i }ly mezi SOAP a REST\relax }}{21}{table.caption.13}
+\contentsline {table}{\numberline {3.2}{\ignorespaces Funkce HTTP metod\relax }}{26}{table.caption.15}
+\contentsline {table}{\numberline {3.3}{\ignorespaces Rozhran\IeC {\'\i } REST API p\IeC {\v r}\IeC {\'\i }stupn\IeC {\'e} s tokenem\relax }}{27}{table.caption.16}
+\contentsline {table}{\numberline {3.4}{\ignorespaces Rozhran\IeC {\'\i } REST API p\IeC {\v r}\IeC {\'\i }stupn\IeC {\'e} bez tokenu\relax }}{27}{table.caption.17}
+\addvspace {10pt}
+\contentsline {table}{\numberline {4.1}{\ignorespaces Sou\IeC {\v c}asn\IeC {\'e} nastaven\IeC {\'\i } hostingu na serveru DigitalOcean tokenu\relax }}{54}{table.caption.28}
+\addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}

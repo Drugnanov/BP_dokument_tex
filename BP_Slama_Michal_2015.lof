@@ -3,15 +3,20 @@
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Digram zpracov\IeC {\'a}n\IeC {\'\i } schr\IeC {\'a}nky dle metodiky \textit {GTD }\cite {gtd_graph}\relax }}{9}{figure.caption.8}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Podoba webov\IeC {\'e} aplikace ToodleDo.\cite {toodledo_overview}\relax }}{12}{figure.caption.9}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Mobiln\IeC {\'\i } aplikace Doit.\cite {doit_overviewgram}\relax }}{13}{figure.caption.10}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Wunderlist \cite {wunderlist_overview}\relax }}{14}{figure.caption.11}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Digram zpracov\IeC {\'a}n\IeC {\'\i } schr\IeC {\'a}nky dle metodiky \textit {GTD }\cite {gtd_graph}\relax }}{9}{figure.caption.7}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Podoba webov\IeC {\'e} aplikace ToodleDo.\cite {toodledo_overview}\relax }}{12}{figure.caption.8}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Mobiln\IeC {\'\i } aplikace Doit.\cite {doit_overviewgram}\relax }}{13}{figure.caption.9}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Wunderlist \cite {wunderlist_overview}\relax }}{14}{figure.caption.10}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Model nasazen\IeC {\'\i } GTD (\IeC {\v s}ediv\IeC {\v e} zbarven\IeC {\'a} nasazen\IeC {\'\i } ukazuj\IeC {\'\i } \IeC {\'u}vahy dal\IeC {\v s}\IeC {\'\i }ho roz\IeC {\v s}\IeC {\'\i }\IeC {\v r}en\IeC {\'\i })\relax }}{18}{figure.caption.12}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Webov\IeC {\'e} prost\IeC {\v r}ed\IeC {\'\i } pro n\IeC {\'a}vrh REST API ve specifikaci RAML od firmy Mulesoft\relax }}{28}{figure.caption.20}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Model nasazen\IeC {\'\i } GTD (\IeC {\v s}ediv\IeC {\v e} jsou zbarvena \IeC {\'u}vaha dal\IeC {\v s}\IeC {\'\i }ho roz\IeC {\v s}\IeC {\'\i }\IeC {\v r}en\IeC {\'\i })\relax }}{18}{figure.caption.12}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Webov\IeC {\'e} prost\IeC {\v r}ed\IeC {\'\i } pro n\IeC {\'a}vrh REST API ve specifikaci RAML od firmy Mulesoft\relax }}{28}{figure.caption.18}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Datab\IeC {\'a}zov\IeC {\'y} model\relax }}{36}{figure.caption.24}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Datab\IeC {\'a}zov\IeC {\'y} model\relax }}{36}{figure.caption.23}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Registrace aplikace na Facebook\relax }}{47}{figure.caption.26}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Registrace aplikace na Google\relax }}{50}{figure.caption.27}
+\addvspace {10pt}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Projekt SOAP UI pro testov\IeC {\'a}n\IeC {\'\i } RESP API\relax }}{55}{figure.caption.29}
+\addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}
